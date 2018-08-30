@@ -68,7 +68,9 @@ $(document).ready(function() {
         autoHeight: true,
         mouseDrag: false,
         touchDrag: false,
-        transitionStyle: "fadeUp"
+        transitionStyle: "fadeUp",
+        loop:true,
+        autoPlay:7500
     });
 
     $(".testimonials-carousel, .mockup-carousel").owlCarousel({
@@ -131,5 +133,14 @@ $(document).ready(function() {
     };
 
     filterList.init();
+    
+    //Modal start/stop controls for when modals are opened.
+    $(".view-details").click(function(){
+      $(".portfolio-carousel").trigger('owl.stop');
+    });
+    
+    $(".close-details").click(function(){
+      $(".portfolio-carousel").trigger('owl.play', 7500);
+    });
 
 })(jQuery); // End of use strict

@@ -7,10 +7,19 @@ handlers:
   static_files: index.html
   upload: index.html
   secure: always
+  
+- url: /preview.html
+  static_files: preview.html
+  upload: preview.html
+  secure: always  
 
 - url: /css
   static_dir: css
   secure: always
+  
+- url: /vendor
+  static_dir: vendor
+  secure: always  
 
 - url: /js
   static_dir: js

@@ -1,1 +1,26 @@
 /* your styles go here */
+.portfolio-scroll .scroll-down {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+}
+.portfolio-scroll .scroll-down .btn {
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  line-height: 50px;
+  padding: 0;
+  letter-spacing: normal;
+  color: white;
+  font-size: 30px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.portfolio-scroll .scroll-down .btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}

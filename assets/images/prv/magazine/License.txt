@@ -1,0 +1,9 @@
+Files: img-1_800x600 to img-10_800x600, img-author-1.jpg: 
+Source: https://www.flickr.com/photos/markjsebastian
+License: Contact the author
+
+-----
+
+Files: img-promo-1_800x600 to img-promo-8_800x600: 
+Source: https://www.flickr.com/photos/markjsebastian
+License: Contact the author

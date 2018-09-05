@@ -1,0 +1,7 @@
+.tp-opacity {
+  opacity: .35 !important
+}
+
+.tp-nopointer {
+  pointer-events: none !important
+}

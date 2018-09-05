@@ -1,0 +1,294 @@
+// Body
+$body-bg: #0a0a0c;
+
+// Gray tones
+$color-gray-dark:                 #f3f3f3;
+$color-gray:                      #fff;
+$color-gray-light:                #ddd;
+$color-gray-lighter:              #999;
+$color-gray-lightest:             #333;
+
+
+// Specialized colors
+$color-minimalist: #232323;
+
+// // Base color 1 (Site color 1)
+// $color-base-1: #3452ff; //#e61728; //#1C6BA0 #4579ef
+// $color-base-text-1: #FFF;
+
+// // Base color 2 (Site color 2)
+// $color-base-2: #292f36;
+// $color-base-text-2: #FFF;
+
+// Base color 3. Choose a neutral color such gray or light gray
+$color-base-3: $color-gray-light;
+$color-base-text-3: rgba(255, 255, 255, 0.9);
+
+// Base color 4. Choose a dark color (or a light one for the dark theme)
+$color-base-4: #FFF;
+$color-base-text-4: #0A0814;
+
+// Base color 5. Choose a light color (or a dark one for the dark theme)
+$color-base-5: #1d2125;
+$color-base-text-5: #FFF;
+
+// Background colors used for sections (.slice)
+$section-color-1: #0a0a0c;
+$section-color-2: darken(#0a0a0c, 3%);
+$section-color-3: $color-space-gray;
+$section-color-4: darken($color-space-gray, 10%);
+
+// Headings
+$heading-color: rgb(255, 255, 255);
+$heading-inverse-color: $color-white;
+$heading-light-color: rgba(255, 255, 255, 0.6);
+
+// Section titles
+$section-title-color: #FFF;
+$section-title-color-inverse: #333;
+
+
+// Navbar (default)
+$navbar-bg: #0a0a0c;
+$navbar-border-color: #0a0a0c;
+
+// Navbar (light)
+$navbar-dark-bg: rgb(242, 242, 242);
+$navbar-dark-border-color: rgb(213, 213, 213);
+
+// Navbar (dark)
+$navbar-light-bg: #0a0a0c;
+$navbar-light-border-color: #0a0a0c;
+
+// Navbar (default) links and text
+$navbar-nav-link-color: #f3f3f3;
+$navbar-nav-text-color: rgba(255, 255, 255, 0.3);
+
+// Navbar (dark) - link colors
+$navbar-dark-nav-link-color: rgba(0, 0, 0, 0.5);
+$navbar-dark-nav-link-color-hover: rgba(0, 0, 0, 0.9);
+$navbar-dark-nav-link-color-active: $color-base-1;
+$navbar-dark-nav-text-color: rgba(18, 18, 18, 1);
+
+// Navbar (light) - link colors
+$navbar-light-nav-link-bg: transparent;
+$navbar-light-nav-link-bg-hover: transparent;
+
+$navbar-light-nav-link-color: rgba(255, 255, 255, 0.7);
+$navbar-light-nav-link-color-hover: rgba(255, 255, 255, 0.8);
+$navbar-light-nav-link-color-active: rgba(255, 255, 255, 0.9);
+
+$navbar-light-nav-text-color: rgba(255, 255, 255, 0.3);
+
+// Navbar icon links
+$navbar-nav-icon-link-border-radius: 100%;
+
+// Navbar (light) icon links
+$navbar-nav-icon-link-bg: transparent;
+$navbar-nav-icon-link-color: #333;
+$navbar-nav-icon-link-border-color: #f3f3f3;
+
+// Navbar (light) icon links: Hover and Focus state
+$navbar-nav-icon-link-bg-hover: transparent;
+$navbar-nav-icon-link-color-hover: $color-base-1;
+$navbar-nav-icon-link-border-color-hover: $color-base-1;
+
+// Navbar (dark) icon links
+$navbar-dark-nav-icon-link-bg: transparent;
+$navbar-dark-nav-icon-link-color: rgba(255, 255, 255, 0.5);
+$navbar-dark-nav-icon-link-border-color: rgba(255, 255, 255, 0.7);
+
+// Navbar (dark) icon links: Hover and Focus state
+$navbar-dark-nav-icon-link-bg-hover: transparent;
+$navbar-dark-nav-icon-link-color-hover: $color-base-1;
+$navbar-dark-nav-icon-link-border-color-hover: $color-base-1;
+
+// Navbar dropdown menu
+$navbar-dropdown-menu-border-radius: 3px;
+$navbar-dropdown-menu-margin-top: 0;
+
+// Navbar dropdown menu (light)
+$navbar-dropdown-menu-bg: #FFF;
+$navbar-dropdown-menu-color: #666;
+$navbar-dropdown-menu-border-top: 0;
+
+// Navbar dropdown menu (dark)
+$navbar-dropdown-dark-menu-bg: #292f36;
+$navbar-dropdown-dark-menu-color: rgba(255, 255, 255, 0.5);
+$navbar-dropdown-dark-menu-border: 0;
+$navbar-dropdown-dark-menu-border-top: 0;
+
+// Navbar dropdown menu items
+$navbar-dropdown-item-font-size: 0.8rem;
+$navbar-dropdown-item-font-weight: 400;
+$navbar-dropdown-item-text-transform: capitalize;
+
+// Navbar (light) dropdown menu items
+$navbar-dropdown-item-bg: rgb(255, 255, 255);
+$navbar-dropdown-item-color: #666;
+$navbar-dropdown-item-border-color: #f9f9f9;
+
+// Navbar (light) dropdown menu items: Hover and focus state
+$navbar-dropdown-item-bg-hover: transparent;
+$navbar-dropdown-item-color-hover: $color-base-1;
+
+// Navbar (light) dropdown menu components
+$navbar-dropdown-title-color: rgba(0, 0, 0, 0.7);
+
+// Navbar (dark) dropdown menu items
+$navbar-dropdown-dark-item-bg: rgba(19, 19, 19, 1);
+$navbar-dropdown-dark-item-color: rgba(255, 255, 255, 0.7);
+$navbar-dropdown-dark-item-border-color: rgba(30, 30, 30, 0.7);
+
+// Navbar (dark) dropdown menu items: Hover and focus state
+$navbar-dropdown-dark-item-color-hover: $color-base-1;
+$navbar-dropdown-dark-item-bg-hover: transparent;
+
+// Navbar (dark) dropdown menu components
+$navbar-dark-dropdown-title-color: rgba(255, 255, 255, 0.7);
+
+// Navbar (light) toggle button (for collapsable menu)
+$navbar-toggle-bg: transparent;
+$navbar-toggle-border-color: transparent;
+$navbar-toggle-border-radius: 0;
+$navbar-toggle-color: rgba(0, 0, 0, 0.5);
+
+// Navbar (light) toggle button (for collapsable menu): Hover and Focus state
+$navbar-toggle-bg-hover: transparent;
+$navbar-toggle-border-color-hover: transparent;
+$navbar-toggle-color-hover: rgba(0, 0, 0, 0.8);
+$navbar-toggle-color-active: $color-base-1;
+
+// Navbar (dark) toggle button (for collapsable menu)
+$navbar-dark-toggle-bg: transparent;
+$navbar-dark-toggle-border-color: transparent;
+$navbar-dark-toggle-border-radius: 0;
+$navbar-dark-toggle-color: rgba(255, 255, 255, 0.5);
+
+// Navbar (dark) toggle button (for collapsable menu): Hover and Focus state
+$navbar-dark-toggle-bg-hover: transparent;
+$navbar-dark-toggle-border-color-hover: transparent;
+$navbar-dark-toggle-color-hover: rgba(255, 255, 255, 0.7);
+$navbar-dark-toggle-color-active: rgba(255, 255, 255, 0.9);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Navbar (default) links and text
+// $navbar-nav-link-bg: transparent;
+// $navbar-nav-link-bg-hover: transparent;
+// $navbar-nav-link-bg-active: transparent;
+
+// $navbar-light-nav-link-color: rgba(0, 0, 0, 0.8);
+// $navbar-nav-link-color-hover: $color-base-1;
+// $navbar-nav-link-color-active: $color-base-1;
+
+
+// // Navbar (light) - link colors
+// $navbar-light-nav-link-bg: transparent;
+// $navbar-light-nav-link-bg-hover: transparent;
+// $navbar-light-nav-link-bg-active: transparent;
+
+// $navbar-nav-link-color: rgba(255, 255, 255, 0.8);
+// $navbar-light-nav-link-color-hover: $color-base-1;
+// $navbar-light-nav-link-color-active: $color-base-1;
+
+// Breadcrumb
+$page-title-bg: #333;
+$page-title-color: #fcfcfc;
+$page-title-link-color: #787878;
+$page-title-border-color: #363636;
+
+// Borders
+$border-color-base: rgba(255, 255, 255, 0.05);
+$border-color-inner: rgba(243, 243, 243, 0.7);
+
+// Sidebar
+$sidebar-bg: #333;
+$sidebar-2-bg: lighten($section-color-1, 5%);
+$sidebar-border-color: $border-color-base;
+$sidebar-object-border-color: darken($sidebar-bg, 10%);
+$sidebar-heading-color: rgba(0, 0, 0, 0.7);
+$sidebar-text-color: rgba(0, 0, 0, 0.5);
+
+$sidebar-inverse-bg: rgb(242, 242, 242);
+$sidebar-inverse-border-color: rgb(242, 242, 242);
+$sidebar-inverse-object-border-color: rgb(242, 242, 242);
+
+// Slidebar
+$slidebar-bg: #1f1f1f;
+$slidebar-border-color: transparent;
+$slidebar-color: rgba(255, 255, 255, 0.5);
+$slidebar-color-hover: rgba(255, 255, 255, 0.7);
+$slidebar-heading-color: $color-gray-light;
+
+// Cards
+$card-wrapper-bg: #222;
+
+$card-bg:                  lighten($section-color-1, 5%);
+$card-border-color:        rgba(0, 0, 0, 0.1);
+$card-header-bg:           #f1f1f1;
+$card-footer-bg:           #f1f1f1;
+$card-text-color:          $color-gray;
+$card-heading-color: 		rgba(255, 255, 255, .8);
+
+$card-inverse-bg:                  #1b1e23;
+$card-inverse-border-color:        rgba(0, 0, 0, .15);
+$card-inverse-header-bg:           #333;
+$card-inverse-footer-bg:           #333;
+
+$card-inverse-title-color:         #f3f3f3;
+$card-inverse-text-color:          #999;
+
+// Hover effects
+$hover-effect-mask-bg: rgba(0, 0, 0, .8);
+
+// Product actions
+$product-sportswear-bg: #333;
+$product-actions-bg: rgba(255, 255, 255, .3);
+
+// Forms
+$form-control-bg: #333;
+$form-control-bg-focus: #454545;
+$form-control-disabled-bg: #999;
+$form-control-color: #FFF;
+$form-control-color-focus: #FFF;
+$form-control-placeholder-color: rgba(255, 255, 255, 0.4);
+$form-control-placeholder-color-focus: rgba(255, 255, 0, 0.8);
+$form-control-border-width: 1px;
+$form-control-border-color: #363636;
+$form-control-border-color-focus: #363636;
+
+$form-label-color: rgba(255, 255, 255, 0.7);
+
+// Progress
+$progress-bg: lighten($section-color-1, 5%);
+$progress-bg-active: $color-base-1;
+
+// List groups
+$list-group-bg:                     #292f36;
+$list-group-hover-bg:               darken($list-group-bg, 10%);
+
+// Component (values applied to all Bootstrap components as default)
+$component-bg: #f3f3f3;
+$component-color: #333;
+$component-border-color: $border-color-base;
+
+// Collapse
+$collapse-border-color: $border-color-base;

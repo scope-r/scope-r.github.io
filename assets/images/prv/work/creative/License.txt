@@ -1,0 +1,15 @@
+Files: img-1.jpg to img-14.jpg: 
+Source: https://www.mockupworld.co
+License: Free for commercial use
+
+-----
+
+Files: img-1-sm.jpg to img-14-sm.jpg: 
+Source: https://www.mockupworld.co
+License: Free for commercial use
+
+-----
+
+Files: img-slider-1.jpg to img-slider-2.jpg: 
+Source: https://www.unsplash.com
+License: Free for commercial use

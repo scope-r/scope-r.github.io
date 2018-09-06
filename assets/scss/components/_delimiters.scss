@@ -712,8 +712,9 @@ svg#bigTriangleColor {
 .shape-container[data-shape-style="opaque_waves_2"] svg path:nth-child(2) {
     opacity: 0.4;
 }
-@media only screen and (max-width: 767px) {
-    .shape-container .shape-item {
-        height: 33%;
-    }
-}
+// TODO Creates gap between row and shape
+//@media only screen and (max-width: 767px) {
+//    .shape-container .shape-item {
+//        height: 33%;
+//    }
+//}

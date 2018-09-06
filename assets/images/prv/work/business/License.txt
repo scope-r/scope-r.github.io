@@ -1,0 +1,9 @@
+Files: img-1.jpg to img-8.jpg: 
+Source: http://www.unsplash.com
+License: Free for commercial use
+
+-----
+
+Files: img-1-sm.jpg to img-8-sm.jpg: 
+Source: http://www.unsplash.com
+License: Free for commercial use

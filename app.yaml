@@ -7,6 +7,15 @@ handlers:
   static_files: index.html
   upload: index.html
   secure: always
+  
+- url: /preview.html
+  static_files: homepage-image.html
+  upload: homepage-image.html
+  secure: always  
+
+- url: /assets
+  static_dir: assets
+  secure: always
 
 - url: /css
   static_dir: css

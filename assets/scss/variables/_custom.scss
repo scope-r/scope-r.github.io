@@ -31,7 +31,7 @@ $color-base-3: $color-gray-lighter;
 $color-base-text-3: rgba(255, 255, 255, 0.9);
 
 // Base color 4. Choose a dark color (or a light one for the dark theme)
-$color-base-4: $color-gray-dark;
+$color-base-4: #08415C;
 $color-base-text-4: #FFF;
 
 // Base color 5. Choose a light color (or a dark one for the dark theme)
@@ -112,6 +112,6 @@ $navbar-light-nav-text-color: rgba(18, 18, 18, 1);
 $navbar-dropdown-menu-border-radius: 2px;
 
 // Footer
-$footer-bg: #08415C;
+$footer-bg: $color-base-4;
 //$footer-color: ;
 

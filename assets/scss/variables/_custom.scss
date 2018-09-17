@@ -18,21 +18,21 @@ $color-gray-light:                #818a91;
 $color-gray-lighter:              #E8E7E7;
 $color-gray-lightest:             #f7f7f9;
 
-// Base color 1 (Site color 1)
-$color-base-1: #3E6E7A;
+// Base color 1 (Site color 1) - Dark Blue
+$color-base-1: rgb(0, 11, 63);
 $color-base-text-1: #FFF;
 
-// Base color 2 (Site color 2)
-$color-base-2: #D00000;
-$color-base-text-2: #FFF;
+// Base color 2 (Site color 2) - Yellow
+$color-base-2: rgb(255, 199, 38);
+$color-base-text-2: $color-gray-dark;
 
-// Base color 3. Choose a neutral color such gray or light gray
-$color-base-3: $color-gray-lighter;
-$color-base-text-3: rgba(255, 255, 255, 0.9);
+// Base color 3. Choose a neutral color such gray or light gray  - Light BLue
+$color-base-3: rgb(200, 207, 227);
+$color-base-text-3: $color-base-1;
 
 // Base color 4. Choose a dark color (or a light one for the dark theme)
-$color-base-4: #08415C;
-$color-base-text-4: #FFF;
+$color-base-4: $color-gray-lighter;
+$color-base-text-4: $color-base-3;
 
 // Base color 5. Choose a light color (or a dark one for the dark theme)
 $color-base-5: #FFF;
@@ -112,6 +112,6 @@ $navbar-light-nav-text-color: rgba(18, 18, 18, 1);
 $navbar-dropdown-menu-border-radius: 2px;
 
 // Footer
-$footer-bg: $color-base-4;
+//$footer-bg: rgb(0, 11, 63);
 //$footer-color: ;
 

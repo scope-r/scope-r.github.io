@@ -10,6 +10,8 @@
 <meta name="keywords" content="bootstrap, responsive, template, website, html, theme, ux, ui, web, design, developer, support, business, corporate, real estate, education, medical, school, education, demo, css, framework">
 <meta name="author" content="Webpixels">
 
+<meta name="theme-color" content="#000b3f" />
+
 <title>Boomerang - Multipurpose Bootstrap Theme</title>
 
 <!-- Bootstrap -->
@@ -203,7 +205,7 @@
 </div>
 
 <div class="pl-4 d-none d-lg-inline-block">
-    <a href="https://goo.gl/9BbH7R" class="btn btn-styled btn-sm btn-base-5 text-uppercase btn-circle">
+    <a href="https://goo.gl/9BbH7R" class="btn btn-styled btn-sm btn-base-3 text-uppercase btn-circle">
         Purchase now
         <span class="badge badge-pill bg-base-2">$23 USD</span>    </a>
 </div>
@@ -262,7 +264,9 @@
                                                         </div>
 
                                                         <div class="mt-4">
-                                                            <button type="submit" class="btn btn-styled btn-base-1 btn-circle">
+                                                            <div class="g-recaptcha mt-3" data-sitekey="6Lfs5ScUAAAAANAJwGrdfvWLFRRiVbKRE2vfoaFj"></div>
+
+                                                            <button type="submit" class="btn btn-styled btn-base-2 btn-circle mt-5">
                                                                 Send message
                                                             </button>
                                                         </div>
@@ -285,7 +289,7 @@
                     </section>
 
                     <!-- FOOTER -->
-                    <footer id="footer" class="footer">
+                    <footer id="footer" class="footer bg-base-1">
     <div class="footer-top">
         <div class="container">
             <div class="row cols-xs-space cols-sm-space cols-md-space">
@@ -402,7 +406,7 @@
 </div><!-- END: body-wrap -->
 
 <!-- SCRIPTS -->
-<a href="#" class="back-to-top btn-back-to-top"></a>
+<a href="#" class="back-to-top btn-back-to-top btn-base-2"></a>
 
 <!-- Core -->
 <script src="./assets/vendor/jquery/jquery.min.js"></script>
@@ -450,7 +454,11 @@
 
 <!-- Google maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBuyKngB9VC3zgY_uEB-DKL9BKYMekbeY&callback=initMap" type="text/javascript"></script>
+<!-- TODO: Apply style: https://snazzymaps.com/explore?text=&sort=&tag=&color=blue -->
 <script src="./assets/js/google-maps/google-maps-blue.js"></script>
+
+<!-- Recaptcha -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <!-- App JS -->
 <script src="./assets/js/boomerang.min.js"></script>

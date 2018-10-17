@@ -1,14 +1,45 @@
 var map;
 
 function initMap() {
-    var myLatlng = new google.maps.LatLng(46.7712, 23.6236);
+    var myLatlng = new google.maps.LatLng(45.2754884,-75.7449855);
     var mapOptions = {
-        zoom: 16,
+        zoom: 14,
         scrollwheel: false,
-        center: myLatlng,
+        center: new google.maps.LatLng(45.2806238,-75.7472997),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#3f87f5"},{"visibility":"on"}]}]
-
+        styles: [
+                  {
+                      "stylers": [
+                          {
+                              "hue": "#c8cfe3"
+                          },
+                          {
+                              "saturation": 250
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "lightness": 50
+                          },
+                          {
+                              "visibility": "simplified"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road",
+                      "elementType": "labels",
+                      "stylers": [
+                          {
+                              "visibility": "off"
+                          }
+                      ]
+                  }
+              ]
     }
     map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
@@ -16,12 +47,12 @@ function initMap() {
         position: myLatlng,
         map: map,
         animation: google.maps.Animation.DROP,
-        title: 'Hello World!'
+        title: 'Scope-R'
     });
 
-    var contentString = '<div class="info-window-content"><h2>Webpixels</h2>' +
-        '<h3>Premium Themes · UI/UX · Web Apps</h3>' +
-        '<p>Some more details for directions or company informations...</p></div>';
+    var contentString = '<div class="info-window-content"><h2>Scope-R</h2>' +
+        '<h3>Software · Methodology · Efficiency</h3>' +
+        '<p><a href="https://goo.gl/maps/5pYbMeoqTry">See map</a> for directions or additional company information.</p></div>';
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString

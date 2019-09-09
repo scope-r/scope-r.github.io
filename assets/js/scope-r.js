@@ -1,5 +1,7 @@
-$("#scroll_on_click").click(function() {
+$(".scroll-on-click").click(function(object) {
+    var location = $(object.currentTarget).data("scrollTarget");
+    debugger;
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#initial_section").offset().top
+        scrollTop: $("#" + location).offset().top
     }, 2000);
 });

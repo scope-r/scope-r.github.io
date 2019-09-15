@@ -63,7 +63,7 @@ async function webserver() {
     await connect.server({
         name: 'Scope-R',
         root: './'.concat(dist),
-        port: 3001,
+        port: 80,
         livereload: true
     });
 }

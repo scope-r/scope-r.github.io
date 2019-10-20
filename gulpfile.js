@@ -11,7 +11,7 @@ const dist = 'dist';
 function clean() {
     return del(["./".concat(dist)
                 .concat("/")],
-        { force: true });
+                { force: true });
 }
 
 //Build the CSS
@@ -58,6 +58,13 @@ function images() {
         .pipe(connect.reload());
 }
 
+// Watch files
+async function watchFiles() {
+  gulp.watch("./assets/**/*.css", css); //TODO Include SCSS
+  gulp.watch(['./assets/**/*.js', '!./assets/**/*.min.js'], js);
+  gulp.watch("./*.html", html);
+}
+
 //Run the server
 async function webserver() {
     await connect.server({
@@ -70,7 +77,12 @@ async function webserver() {
 
 
 const build = gulp.series(clean,
+    gulp.parallel(css, html, js, fonts, images));
+
+const serve = gulp.series(clean,
     gulp.parallel(css, html, js, fonts, images),
-    gulp.series(webserver));
+    gulp.series(webserver),
+    gulp.series(watchFiles));
 
 exports.default = build;
+exports.serve = serve;

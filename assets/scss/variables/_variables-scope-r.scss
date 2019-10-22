@@ -1,3 +1,13 @@
+/* 
+
+Copy and paste the variables that you want to modify. The default ones will be overridden.
+Below is a basic example of how to edit Sass variables. 
+It is a basic level of customization that will help you modify the primary colors and some other properties
+
+Uncomment the lines you want to edit. Remove the ones you don't need or add new ones from _variables.scss
+
+*/
+
 // Body
 $body-bg: #fff;
 
@@ -5,24 +15,24 @@ $body-bg: #fff;
 $color-gray-dark:                 #2b2b2c;
 $color-gray:                      #55595c;
 $color-gray-light:                #818a91;
-$color-gray-lighter:              #eceeef;
+$color-gray-lighter:              #E8E7E7;
 $color-gray-lightest:             #f7f7f9;
 
-// Base color 1 (Site color 1)
-$color-base-1: #2e7eed;
+// Base color 1 (Site color 1) - Dark Blue
+$color-base-1: rgb(0, 11, 63);
 $color-base-text-1: #FFF;
 
-// Base color 2 (Site color 2)
-$color-base-2: #cc1265;
-$color-base-text-2: #FFF;
+// Base color 2 (Site color 2) - Yellow
+$color-base-2: rgb(255, 199, 38);
+$color-base-text-2: $color-gray-dark;
 
-// Base color 3. Choose a neutral color such gray or light gray
-$color-base-3: $color-gray-light;
-$color-base-text-3: rgba(255, 255, 255, 0.9);
+// Base color 3. Choose a neutral color such gray or light gray  - Light BLue
+$color-base-3: rgb(200, 207, 227);
+$color-base-text-3: $color-base-1;
 
 // Base color 4. Choose a dark color (or a light one for the dark theme)
-$color-base-4: #1d2125;
-$color-base-text-4: #FFF;
+$color-base-4: $color-gray-lighter;
+$color-base-text-4: $color-base-3;
 
 // Base color 5. Choose a light color (or a dark one for the dark theme)
 $color-base-5: #FFF;
@@ -100,3 +110,8 @@ $navbar-light-nav-text-color: rgba(18, 18, 18, 1);
 
 // Navbar dropdown menu
 $navbar-dropdown-menu-border-radius: 2px;
+
+// Footer
+//$footer-bg: rgb(0, 11, 63);
+//$footer-color: ;
+

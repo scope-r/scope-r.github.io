@@ -51,19 +51,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
   <!-- Recaptcha -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script>
-    function onSubmit(token) {
-      // Make sure that the captcha button was clicked
-      var response = grecaptcha.getResponse();
-      if (response != "") {
-        // TODO remove this
-        document.getElementById("contact-form").submit();
-      } else {
-        alert('Please check the Captcha in order to submit the form');
-      }
-    }
-  </script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147249589-1"></script>
@@ -154,7 +142,7 @@
                     <div class="col-lg-8">
                       <div class="card relative z-depth-5 mt-5 mb--300" style="z-index: 1000;">
                         <div class="card-body px-5 py-5">
-                          <form class="form-default form-material">
+                          <form id="contactform" class="form-default form-material">
                             <div class="row">
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
@@ -186,9 +174,7 @@
                             </div>
 
                             <div class="mt-4">
-                              <div class="g-recaptcha mt-3" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"
-                                data-callback="onSubmit">
-                              </div>
+                              <div class="g-recaptcha" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"></div>
 
                               <button class="btn btn-styled btn-base-2 btn-circle mt-5">
                                 Send message
@@ -364,6 +350,7 @@
 
   <!-- App JS -->
   <script src="./assets/js/boomerang.min.js"></script>
+  <script src="./assets/js/scope-r.js"></script>
 
 </body>
 

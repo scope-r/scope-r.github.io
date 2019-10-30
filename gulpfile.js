@@ -1,6 +1,11 @@
-var gulp = require('gulp');
-var connect = require('gulp-connect');
-var del = require('del');
+const gulp = require('gulp');
+const connect = require('gulp-connect');
+const del = require('del');
+const plumber = require("gulp-plumber");
+const rename = require("gulp-rename");
+const sass = require("gulp-sass");
+const uglify = require("gulp-uglify");
+const cleanCSS = require("gulp-clean-css");
 
 /**
  * Variables used as global vars across the application
@@ -11,16 +16,42 @@ const dist = 'dist';
 function clean() {
     return del(["./".concat(dist)
                 .concat("/")],
-        { force: true });
+                { force: true });
 }
 
 //Build the CSS
 function css() {
     return gulp
-        .src('./assets/**/*.css')
-        .pipe(gulp.dest('./'.concat(dist)
+      .src('./assets/**/*.css')
+      .pipe(gulp.dest('./'.concat(dist)
                 .concat('/assets')))
-        .pipe(connect.reload());
+      .pipe(connect.reload());
+}
+
+function scss() {
+    return gulp
+      .src("./assets/**/*.scss")
+      .pipe(plumber())
+      .pipe(sass({
+        outputStyle: "expanded",
+        includePaths: "./node_modules",
+      }))
+      .on("error", sass.logError)
+      .pipe(rename({
+        dirname: "css"
+      }))
+      .pipe(gulp.dest('./'
+              .concat(dist)
+              .concat('/assets')))
+      .pipe(rename({
+        suffix: ".min",
+        dirname: "css"
+      }))
+      .pipe(cleanCSS())
+      .pipe(gulp.dest('./'
+              .concat(dist)
+              .concat('/assets')))
+      .pipe(connect.reload());
 }
 
 //Build the JS
@@ -58,6 +89,13 @@ function images() {
         .pipe(connect.reload());
 }
 
+// Watch files
+async function watchFiles() {
+  gulp.watch("./assets/**/*.scss", scss);
+  gulp.watch(['./assets/**/*.js', '!./assets/**/*.min.js'], js);
+  gulp.watch("./*.html", html);
+}
+
 //Run the server
 async function webserver() {
     await connect.server({
@@ -70,7 +108,13 @@ async function webserver() {
 
 
 const build = gulp.series(clean,
-    gulp.parallel(css, html, js, fonts, images),
-    gulp.series(webserver));
+    gulp.parallel(css, scss, html, js, fonts, images));
+
+const serve = gulp.series(build,
+    gulp.parallel(webserver, watchFiles));
 
 exports.default = build;
+exports.serve = serve;
+exports.css = css;
+exports.scss = scss;
+exports.js = js;

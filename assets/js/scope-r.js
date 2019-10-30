@@ -6,11 +6,3 @@ var copyright_text = $("#valid_date").html();
 // Replace the year with the current year
 $("#valid_date").html(
     copyright_text.replace("$date", this_year));
-
-/*TODO We have all the libs for this, remove */
-$(".scroll-on-click").click(function(object) {
-    var location = $(object.currentTarget).data("scrollTarget");
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#" + location).offset().top
-    }, 2000);
-});

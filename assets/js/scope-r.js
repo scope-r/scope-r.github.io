@@ -3,6 +3,8 @@ var this_year = date.getFullYear();
 
 var copyright_text = $("#valid_date").html();
 
+var endpoint = "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVENRS0VCQTczL0JQU1RZUzEzSy9BRkJoVkpmRkloWGh6N0JvYkdNU09odFA=";
+
 // Replace the year with the current year
 $("#valid_date").html(
   copyright_text.replace("$date", this_year));
@@ -22,7 +24,7 @@ $("#form_submit").click(function (event) {
     };
 
     $.post({
-      url: "https://hooks.slack.com/services/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",
+      url: atob(endpoint),
       data: JSON.stringify(payload),
       success: function (response) {
         alert("Thank you for your message");

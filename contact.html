@@ -50,13 +50,15 @@
 
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+  <!-- Recaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147249589-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-147249589-1');
   </script>
 
@@ -139,12 +141,12 @@
                     <div class="col-lg-8">
                       <div class="card relative z-depth-5 mt-5 mb--300" style="z-index: 1000;">
                         <div class="card-body px-5 py-5">
-                          <form class="form-default form-material">
+                          <div id="contactform" class="form-default form-material">
                             <div class="row">
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
                                   <label class="control-label">Your name</label>
-                                  <input type="text" class="form-control form-control-lg" placeholder="">
+                                  <input id="name" type="text" class="form-control form-control-lg" placeholder="">
                                   <span class="bar"></span>
                                 </div>
                               </div>
@@ -154,7 +156,7 @@
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
                                   <label class="control-label">Email address</label>
-                                  <input type="text" class="form-control form-control-lg" placeholder="">
+                                  <input id="email_address" type="text" class="form-control form-control-lg" placeholder="">
                                   <span class="bar"></span>
                                 </div>
                               </div>
@@ -164,21 +166,20 @@
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
                                   <label class="control-label">Type your message</label>
-                                  <textarea class="form-control" rows="5" placeholder=""></textarea>
+                                  <textarea id="message" class="form-control" rows="5" placeholder=""></textarea>
                                   <span class="bar"></span>
                                 </div>
                               </div>
                             </div>
 
                             <div class="mt-4">
-                              <div class="g-recaptcha mt-3" data-sitekey="6LeNJrcUAAAAAIOBajjotYDtm0FKlktM8Ghqg-yw">
-                              </div>
+                              <div class="g-recaptcha" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"></div>
 
-                              <button type="submit" class="btn btn-styled btn-base-2 btn-circle mt-5">
+                              <button id="form_submit" class="btn btn-styled btn-base-2 btn-circle mt-5">
                                 Send message
                               </button>
                             </div>
-                          </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -337,8 +338,6 @@
   <script src="./assets/vendor/isotope/isotope.min.js"></script>
   <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
-
-
   <!-- Google maps -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGKzKgTs5SMMVLEHQG65d896jVNMizoJw"
     type="text/javascript"></script>
@@ -348,10 +347,9 @@
 
   <script src="./assets/js/google-maps/google-maps-blue.js"></script>
 
-  <!-- Recaptcha -->
-  <script src="https://www.google.com/recaptcha/api.js?render=6LeNJrcUAAAAAIOBajjotYDtm0FKlktM8Ghqg-yw"></script>
   <!-- App JS -->
   <script src="./assets/js/boomerang.min.js"></script>
+  <script src="./assets/js/scope-r.js"></script>
 
 </body>
 

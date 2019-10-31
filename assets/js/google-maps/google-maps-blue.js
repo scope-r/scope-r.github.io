@@ -1,11 +1,11 @@
 var map;
 
 function initMap() {
-    var myLatlng = new google.maps.LatLng(45.2754884,-75.7449855);
+    var myLatlng = new google.maps.LatLng(45.5502871,-75.2779887);
     var mapOptions = {
         zoom: 14,
         scrollwheel: false,
-        center: new google.maps.LatLng(45.2806238,-75.7472997),
+        center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles: [
                   {
@@ -51,8 +51,8 @@ function initMap() {
     });
 
     var contentString = '<div class="info-window-content"><h2>Scope-R</h2>' +
-        '<h3>Software · Methodology · Efficiency</h3>' +
-        '<p><a href="https://goo.gl/maps/5pYbMeoqTry">See map</a> for directions or additional company information.</p></div>';
+        '<h3>Methodology · Precision · Efficiency</h3>' +
+        '<p><a href="https://goo.gl/maps/QjypWz8HZpi6hctt5">See map</a> for directions or additional company information.</p></div>';
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString

@@ -1,0 +1,31 @@
+{
+  "name": "scope-r.github.io",
+  "version": "1.0.0",
+  "description": "scope-r website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scope-r/scope-r.github.io.git"
+  },
+  "author": "Patrique Legault",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scope-r/scope-r.github.io/issues"
+  },
+  "homepage": "https://github.com/scope-r/scope-r.github.io#readme",
+  "dependencies": {
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}

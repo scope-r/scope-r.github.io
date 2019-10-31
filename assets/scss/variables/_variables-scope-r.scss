@@ -1,0 +1,117 @@
+/* 
+
+Copy and paste the variables that you want to modify. The default ones will be overridden.
+Below is a basic example of how to edit Sass variables. 
+It is a basic level of customization that will help you modify the primary colors and some other properties
+
+Uncomment the lines you want to edit. Remove the ones you don't need or add new ones from _variables.scss
+
+*/
+
+// Body
+$body-bg: #fff;
+
+// Gray tones
+$color-gray-dark:                 #2b2b2c;
+$color-gray:                      #55595c;
+$color-gray-light:                #818a91;
+$color-gray-lighter:              #E8E7E7;
+$color-gray-lightest:             #f7f7f9;
+
+// Base color 1 (Site color 1) - Dark Blue
+$color-base-1: rgb(0, 11, 63);
+$color-base-text-1: #FFF;
+
+// Base color 2 (Site color 2) - Yellow
+$color-base-2: rgb(255, 199, 38);
+$color-base-text-2: $color-gray-dark;
+
+// Base color 3. Choose a neutral color such gray or light gray  - Light BLue
+$color-base-3: rgb(200, 207, 227);
+$color-base-text-3: $color-base-1;
+
+// Base color 4. Choose a dark color (or a light one for the dark theme)
+$color-base-4: $color-gray-lighter;
+$color-base-text-4: $color-base-3;
+
+// Base color 5. Choose a light color (or a dark one for the dark theme)
+$color-base-5: #FFF;
+$color-base-text-5: #0A0814;
+
+// Bootstrap's main colors
+$color-primary: $color-blue;
+$color-success: $color-green;
+$color-danger: $color-red;
+$color-warning: $color-orange;
+
+// Background colors used for sections (.slice)
+$section-color-1: #FFF;
+$section-color-2: #fcfcfc;
+$section-color-3: $color-space-gray;
+$section-color-4: #052031;
+
+// Fonts
+$font-family-base: 'Roboto', sans-serif;
+$font-family-alt: 'Nunito', sans-serif;
+
+// Paragraph font setttings
+$paragraph-font-size: 1rem;
+$paragraph-line-height: 1.5rem;
+
+// Headings
+$heading-text-transform: none;
+$heading-font-weight: 500;
+
+$heading-color: rgb(17, 17, 17);
+$heading-inverse-color: $color-white;
+
+// Section titles
+$section-title-text-transform: capitalize;
+$section-title-font-size: $font-size-h2;
+$section-title-font-weight: 400;
+$section-title-color: $color-gray-dark;
+$section-title-color-inverse: $color-white;
+
+$section-title-delimiter-width: 23px;
+
+$section-title-delimiter-border-width: 1px;
+$section-title-delimiter-border-color: $color-gray-dark;
+$section-title-delimiter-border-color-inverse: $color-white;
+
+// Navbar links
+$navbar-nav-link-font-family: $font-family-base;
+$navbar-nav-link-font-size: 0.875rem;
+$navbar-nav-link-font-weight: 500;
+$navbar-nav-link-text-transform: none;
+$navbar-nav-link-letter-spacing: 0;
+$navbar-nav-link-border-radius: 0;
+
+// Navbar (default) links and text
+$navbar-nav-link-bg: transparent;
+$navbar-nav-link-bg-hover: transparent;
+$navbar-nav-link-bg-active: transparent;
+
+$navbar-nav-link-color: #555;
+$navbar-nav-link-color-hover: $color-base-1;
+$navbar-nav-link-color-active: $color-base-1;
+
+$navbar-nav-text-color: rgba(0, 0, 0, 0.3);
+
+// Navbar (light) - link colors
+$navbar-light-nav-link-bg: transparent;
+$navbar-light-nav-link-bg-hover: transparent;
+$navbar-light-nav-link-bg-active: transparent;
+
+$navbar-light-nav-link-color: #666;
+$navbar-light-nav-link-color-hover: $color-base-1;
+$navbar-light-nav-link-color-active: $color-base-1;
+
+$navbar-light-nav-text-color: rgba(18, 18, 18, 1);
+
+// Navbar dropdown menu
+$navbar-dropdown-menu-border-radius: 2px;
+
+// Footer
+//$footer-bg: rgb(0, 11, 63);
+//$footer-color: ;
+

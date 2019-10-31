@@ -7,7 +7,7 @@ var copyright_text = $("#valid_date").html();
 $("#valid_date").html(
   copyright_text.replace("$date", this_year));
 
-$("#contactform").submit(function (event) {
+$("#form_submit").click(function (event) {
   event.stopImmediatePropagation();
   event.preventDefault();
 
@@ -16,19 +16,19 @@ $("#contactform").submit(function (event) {
   if (response != "") {
 
     var payload = {
-      "text": $("#name").val() + $("#email_address").val() + $("#message").val()
+      "text": "`Name` " + $("#name").val() +
+        " `Email` " + $("#email_address").val() +
+        " `Message` " + $("#message").val()
     };
 
-    var result = JSON.stringify(payload);
-
-    debugger;
-    $.ajax({
-      url: "https://hooks.slack.com/services/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",
-      method: "POST",
-      contentType: "application/json",
-      data: result,
+    $.post({
+      url: "https://hooks.slack.com/services/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",
+      data: JSON.stringify(payload),
       success: function (response) {
         alert("Thank you for your message");
+        $("#name").val('');
+        $("#email_address").val('');
+        $("#message").val('');
       },
       error: function (response) {
         alert("Error");

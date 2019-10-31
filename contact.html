@@ -59,7 +59,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-147249589-1');
   </script>
 
@@ -142,7 +141,7 @@
                     <div class="col-lg-8">
                       <div class="card relative z-depth-5 mt-5 mb--300" style="z-index: 1000;">
                         <div class="card-body px-5 py-5">
-                          <form id="contactform" class="form-default form-material">
+                          <div id="contactform" class="form-default form-material">
                             <div class="row">
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
@@ -176,11 +175,11 @@
                             <div class="mt-4">
                               <div class="g-recaptcha" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"></div>
 
-                              <button class="btn btn-styled btn-base-2 btn-circle mt-5">
+                              <button id="form_submit" class="btn btn-styled btn-base-2 btn-circle mt-5">
                                 Send message
                               </button>
                             </div>
-                          </form>
+                          </div>
                         </div>
                       </div>
                     </div>

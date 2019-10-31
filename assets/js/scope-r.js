@@ -22,7 +22,7 @@ $("#form_submit").click(function (event) {
     };
 
     $.post({
-      url: "https://hooks.slack.com/services/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",
+      url: "https://hooks.slack.com/services/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",
       data: JSON.stringify(payload),
       success: function (response) {
         alert("Thank you for your message");

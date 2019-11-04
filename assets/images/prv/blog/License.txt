@@ -1,3 +1,0 @@
-Files: all images inside this folder
-Source: https://unsplash.com
-License: Free for commercial use

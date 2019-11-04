@@ -1,0 +1,3 @@
+Files: img-b-1.jpg to img-b-10.jpg: 
+Source: https://www.flickr.com/photos/126035512@N05
+License: Contact the author

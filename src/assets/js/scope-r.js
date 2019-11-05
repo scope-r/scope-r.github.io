@@ -26,19 +26,14 @@
     var response = grecaptcha.getResponse();
     if (response != "") {
 
-      var payload = {
-        "text": "`Name` " + $("#name").val() +
-          " `Email` " + $("#email_address").val() +
-          " `Message` " + $("#message").val()
-      };
-
       $.post({
         url: atob(endpoints.slack),
-        data: JSON.stringify(payload),
+        data: window.slack.assembleMessage(),
         success: function(response) {
           alert("Thank you for your message");
           $("#name").val('');
           $("#email_address").val('');
+          $("#help").val('');
           $("#message").val('');
         },
         error: function(response) {

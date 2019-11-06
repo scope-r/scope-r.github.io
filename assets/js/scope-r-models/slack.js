@@ -1,6 +1,4 @@
-window.slack = window.slack || {};
-
-window.slack.payload = {
+window.scoper.slack.payload = {
 	"blocks": [
 		{
 			"type": "section",
@@ -40,9 +38,9 @@ window.slack.payload = {
 	]
 };
 
-window.slack.assembleMessage = function(){
+window.scoper.slack.assembleMessage = function(){
 
-	var message = JSON.stringify(window.slack.payload);
+	var message = JSON.stringify(window.scoper.slack.payload);
 
 	return message.replace("$name", $("#name").val())
 								.replace("$email", $("#email_address").val())

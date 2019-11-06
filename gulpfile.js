@@ -6,6 +6,7 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const cleanCSS = require("gulp-clean-css");
+const concat = require('gulp-concat');
 
 /**
  * Variables used as global vars across the application
@@ -15,8 +16,10 @@ const src = '.';
 
 // Clean previous build
 function clean() {
-    return del([dist.concat('/assets/css/**/*.css')],
-                { force: true });
+    return del([dist.concat('/assets/css/**/*.css'),
+                dist.concat('/assets/js/scope-r-all.*')],
+                { force: true }
+              );
 }
 
 function scss() {
@@ -42,10 +45,25 @@ function scss() {
       .pipe(connect.reload());
 }
 
+function js() {
+  return gulp.src([src.concat("/assets/js/scope-r.js"),
+                  src.concat("/assets/js/scope-r-controllers/**/*.js"),
+                  src.concat("/assets/js/scope-r-models/**/*.js")])
+        .pipe(concat('scope-r-all.js'))
+        .pipe(gulp.dest(dist.concat('/assets/js')))
+        .pipe(rename('scope-r-all.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(dist.concat('/assets/js')))
+        .pipe(connect.reload());
+}
+
+
 // Watch files
 async function watchFiles() {
   gulp.watch(src.concat('/assets/**/*.scss'), scss);
-  //gulp.watch([src.concat('/assets/**/*.js'), src.concat('!/assets/**/*.min.js')], js);
+  gulp.watch([src.concat('/assets/**/*.js'),
+              '!'.concat(src).concat('/assets/**/*.min.js'),
+              '!'.concat(src).concat('/assets/**/scope-r-all.js')], js);
   gulp.watch(src.concat('/*.html'), connect.reload());
 }
 
@@ -61,7 +79,7 @@ async function webserver() {
 
 
 const build = gulp.series(clean,
-    gulp.parallel(scss));
+    gulp.parallel(scss, js));
 
 const serve = gulp.series(build,
     gulp.parallel(webserver, watchFiles));
@@ -70,3 +88,4 @@ exports.default = build;
 exports.serve = serve;
 exports.clean = clean;
 exports.scss = scss;
+exports.js = js;

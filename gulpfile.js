@@ -11,21 +11,12 @@ const cleanCSS = require("gulp-clean-css");
  * Variables used as global vars across the application
  */
 const dist = '.';
-const src = './src';
+const src = '.';
 
 // Clean previous build
 function clean() {
-    return del([dist.concat('/*.html'), dist.concat('/assets')],
+    return del([dist.concat('/assets/css/**/*.css')],
                 { force: true });
-}
-
-//Build the CSS
-function css() {
-    return gulp
-      .src(src.concat('/assets/**/*.css'))
-      .pipe(gulp.dest(dist
-                .concat('/assets')))
-      .pipe(connect.reload());
 }
 
 function scss() {
@@ -51,48 +42,18 @@ function scss() {
       .pipe(connect.reload());
 }
 
-//Build the JS
-function js() {
-    return gulp
-        .src(src.concat('/assets/**/*.{js,min.js}'))
-        .pipe(gulp.dest(dist.concat('/assets')))
-        .pipe(connect.reload());
-}
-
-//Build the HTML
-function html() {
-    return gulp
-        .src(src.concat('/*.html'))
-        .pipe(gulp.dest(dist))
-        .pipe(connect.reload());
-}
-
-function fonts() {
-    return gulp
-        .src(src.concat('/assets/fonts/**/*.{eot,ttf,woff,svg,woff2}'))
-        .pipe(gulp.dest(dist.concat('/assets/fonts')))
-        .pipe(connect.reload());
-}
-
-function images() {
-    return gulp
-        .src(src.concat('/assets/images/**/**/*.{png,jpeg,jpg}'))
-        .pipe(gulp.dest(dist.concat('/assets/images')))
-        .pipe(connect.reload());
-}
-
 // Watch files
 async function watchFiles() {
   gulp.watch(src.concat('/assets/**/*.scss'), scss);
-  gulp.watch([src.concat('/assets/**/*.js'), src.concat('!/assets/**/*.min.js')], js);
-  gulp.watch(src.concat('/*.html'), html);
+  //gulp.watch([src.concat('/assets/**/*.js'), src.concat('!/assets/**/*.min.js')], js);
+  gulp.watch(src.concat('/*.html'), connect.reload());
 }
 
 //Run the server
 async function webserver() {
     await connect.server({
         name: 'Scope-R',
-        root: src,
+        root: ".",
         port: 80,
         livereload: true
     });
@@ -100,7 +61,7 @@ async function webserver() {
 
 
 const build = gulp.series(clean,
-    gulp.parallel(css, scss, html, js, fonts, images));
+    gulp.parallel(scss));
 
 const serve = gulp.series(build,
     gulp.parallel(webserver, watchFiles));
@@ -108,9 +69,4 @@ const serve = gulp.series(build,
 exports.default = build;
 exports.serve = serve;
 exports.clean = clean;
-exports.css = css;
 exports.scss = scss;
-exports.js = js;
-exports.html = html;
-exports.fonts = fonts;
-exports.images = images;

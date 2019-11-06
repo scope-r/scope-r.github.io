@@ -61,7 +61,9 @@ function js() {
 // Watch files
 async function watchFiles() {
   gulp.watch(src.concat('/assets/**/*.scss'), scss);
-  gulp.watch([src.concat('/assets/**/*.js'), src.concat('!/assets/**/*.min.js'), src.concat('!/assets/js/scope-r-all*.{js,min.js}')], js);
+  gulp.watch([src.concat('/assets/**/*.js'),
+              '!'.concat(src).concat('/assets/**/*.min.js'),
+              '!'.concat(src).concat('/assets/**/scope-r-all.js')], js);
   gulp.watch(src.concat('/*.html'), connect.reload());
 }
 

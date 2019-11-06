@@ -1,5 +1,4 @@
 window.scoper.contactus.formhandler = function(endpoint){
-
   $("#form_submit").click(function(event) {
     event.stopImmediatePropagation();
     event.preventDefault();
@@ -11,8 +10,8 @@ window.scoper.contactus.formhandler = function(endpoint){
       $.post({
         url: endpoint,
         data: window.scoper.slack.assembleMessage(),
-        success: window.scoper.contactus.formsuccess(response),
-        error: window.scoper.contactus.formerror(response)
+        success: window.scoper.contactus.formsuccess,
+        error: window.scoper.contactus.formerror
       });
     } else {
       alert('Please verify that you are not a robot.');

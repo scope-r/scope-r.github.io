@@ -21,5 +21,7 @@
   $("#mapsendpoint").attr("src", atob(endpoints.googlemaps));
 
   //Contact Us form submit handler
-  window.scoper.contactus.formhandler(atob(endpoints.slack));
+  $(function() {
+    window.scoper.contactus.formhandler(atob(endpoints.slack));
+  });
 })(jQuery);

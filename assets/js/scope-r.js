@@ -1,9 +1,12 @@
 (function($) {
+  //Set namespaces
+  window.scoper = window.scoper || {};
+  window.scoper.slack = window.scoper.slack || {};
+  window.scoper.contactus = window.scoper.contactus || {};
+
   var date = new Date();
   var this_year = date.getFullYear();
   var copyright_text = $("#valid_date").html();
-
-
 
   // Replace the year with the current year
   $("#valid_date").html(
@@ -18,31 +21,5 @@
   $("#mapsendpoint").attr("src", atob(endpoints.googlemaps));
 
   //Contact Us form submit handler
-  $("#form_submit").click(function(event) {
-    event.stopImmediatePropagation();
-    event.preventDefault();
-
-    // Make sure that the captcha button was clicked
-    var response = grecaptcha.getResponse();
-    if (response != "") {
-
-      $.post({
-        url: atob(endpoints.slack),
-        data: window.slack.assembleMessage(),
-        success: function(response) {
-          alert("Thank you for your message");
-          $("#name").val('');
-          $("#email_address").val('');
-          $("#help").val('');
-          $("#message").val('');
-        },
-        error: function(response) {
-          alert("Error");
-          console.log(response);
-        }
-      });
-    } else {
-      alert('Please verify that you are not a robot.');
-    }
-  });
+  window.scoper.contactus.formhandler(atob(endpoints.slack));
 })(jQuery);

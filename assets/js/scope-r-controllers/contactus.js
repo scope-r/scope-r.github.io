@@ -23,6 +23,7 @@ window.scoper.contactus.formsuccess = function(response){
   alert("Thank you for your message");
   $("#name").val('');
   $("#email_address").val('');
+  $("#email_consent").prop("checked", false);
   $("#help").val('');
   $("#message").val('');
 };

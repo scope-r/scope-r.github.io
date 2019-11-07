@@ -1,4 +1,5 @@
 window.scoper.slack.payload = {
+	"text": "New Contact Request",
 	"blocks": [
 		{
 			"type": "section",
@@ -22,7 +23,7 @@ window.scoper.slack.payload = {
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "*Contact Details:* \n\n Name: _$name_ \n\n Email: _$email_ \n\n How we can help: _$help_"
+				"text": "*Contact Details:* \n\n Name: _$name_ \n\n Email: _$email_ \n\n How we can help: _$help_ \n\n Consent to receive updates: _$consent_"
 			}
 		},
         {
@@ -44,6 +45,7 @@ window.scoper.slack.assembleMessage = function(){
 
 	return message.replace("$name", $("#name").val())
 								.replace("$email", $("#email_address").val())
+								.replace("$consent", $("#email_consent").prop("checked"))
 								.replace("$help", $("#help").val())
 								.replace("$message", $("#message").val());
 };

@@ -58,13 +58,18 @@ function js() {
 }
 
 
+function html(){
+  return gulp.src(src.concat("/**/*.html"))
+        .pipe(connect.reload());
+}
+
 // Watch files
 async function watchFiles() {
   gulp.watch(src.concat('/assets/**/*.scss'), scss);
   gulp.watch([src.concat('/assets/**/*.js'),
               '!'.concat(src).concat('/assets/**/*.min.js'),
               '!'.concat(src).concat('/assets/**/scope-r-all.js')], js);
-  gulp.watch(src.concat('/*.html'), connect.reload());
+  gulp.watch(src.concat('/*.html'), html);
 }
 
 //Run the server

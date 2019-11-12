@@ -1,5 +1,5 @@
-window.scoper.contactus.formhandler = function(endpoint){
-  $("#form_submit").click(function(event) {
+window.scoper.contactus.formhandler = function (endpoint) {
+  $("#form_submit").click(function (event) {
     event.stopImmediatePropagation();
     event.preventDefault();
 
@@ -19,16 +19,30 @@ window.scoper.contactus.formhandler = function(endpoint){
   });
 };
 
-window.scoper.contactus.formsuccess = function(response){
-  alert("Thank you for your message");
+window.scoper.contactus.formsuccess = function (response) {
+  $('#submit-success').toast({
+    autohide: false
+  });
+  $('#submit-success').css('display', 'block');
+  $('#submit-success').toast('show');
+  window.scoper.contactus.resetFormFields();
+};
+
+window.scoper.contactus.formerror = function (response) {
+  $('#submit-failure').toast({
+    autohide: false
+  });
+  $('#submit-failure').css('display', 'block');
+  $('#submit-failure').toast('show');
+  console.error(response);
+
+  window.scoper.contactus.resetFormFields();
+};
+
+window.scoper.contactus.resetFormFields = function() {
   $("#name").val('');
   $("#email_address").val('');
   $("#email_consent").prop("checked", false);
   $("#help").val('');
   $("#message").val('');
-};
-
-window.scoper.contactus.formerror = function(response){
-  alert("Error");
-  console.log(response);
-};
+}

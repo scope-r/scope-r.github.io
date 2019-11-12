@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/scope-r/scope-r.github.io#readme",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0"

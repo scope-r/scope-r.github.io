@@ -203,34 +203,6 @@
                                 Send message
                               </button>
                             </div>
-
-                            <div style="display: none;" id="submit-success" class="toast" role="alert"
-                              aria-live="assertive" aria-atomic="true">
-                              <div class="toast-header">
-                                <strong class="mr-auto">Submitted Successfully</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="toast-body">
-                                Your message has been submitted successfully.
-                              </div>
-                            </div>
-                            
-                            <div style="display: none;" id="submit-failure" class="toast" role="alert"
-                              aria-live="assertive" aria-atomic="true">
-                              <div class="toast-header">
-                                <strong class="mr-auto">Error in Submission</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="toast-body">
-                                An error occured, please contact us at +1.613.914.2477
-                              </div>
-                            </div>
-
-
                           </div>
                         </div>
                       </div>
@@ -344,6 +316,39 @@
     </div><!-- END: st-container -->
   </div><!-- END: body-wrap -->
 
+  <div class="scopR-toasts">
+    <div id="submit-success-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;"
+      aria-live="polite" aria-atomic="true">
+      <div>
+        <div id="submit-success" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="mr-auto">Submitted Successfully</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Your message has been submitted successfully.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="submit-failure-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;">
+      <div id="submit-failure" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="mr-auto">Error in Submission</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          An error occured, please contact us at +1.613.914.2477
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- SCRIPTS -->
   <a href="#" class="back-to-top btn-back-to-top btn-base-2"></a>
 
@@ -394,7 +399,7 @@
 
   <!-- App JS -->
   <script src="./assets/js/boomerang.min.js"></script>
-  <script src="./assets/js/scope-r-all.min.js"></script>
+  <script src="./assets/js/scope-r-all.js"></script>
 
   <script src="./assets/js/google-maps/google-maps-blue.js" async></script>
 </body>

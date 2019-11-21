@@ -48,19 +48,23 @@ window.scoper.contactus.formhandler = function (endpoint) {
 };
 
 window.scoper.contactus.formsuccess = function (response) {
+  debugger;
   $('#submit-success').toast({
-    autohide: false
+    animation: true,
+    delay: 2500
   });
-  $('#submit-success').css('display', 'block');
+  $('#submit-success-div').removeClass('d-none');
   $('#submit-success').toast('show');
   window.scoper.contactus.resetFormFields();
 };
 
 window.scoper.contactus.formerror = function (response) {
+  debugger;
   $('#submit-failure').toast({
-    autohide: false
+    animation: true,
+    delay: 1000
   });
-  $('#submit-failure').css('display', 'block');
+  $('#submit-failure-div').removeClass('d-none');
   $('#submit-failure').toast('show');
   console.error(response);
 

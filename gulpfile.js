@@ -69,7 +69,7 @@ async function watchFiles() {
   gulp.watch([src.concat('/assets/**/*.js'),
               '!'.concat(src).concat('/assets/**/*.min.js'),
               '!'.concat(src).concat('/assets/**/scope-r-all.js')], js);
-  gulp.watch(src.concat('/*.html'), html);
+  gulp.watch(src.concat('/**/*.html'), html);
 }
 
 //Run the server

@@ -145,7 +145,7 @@
                             <div class="row">
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
-                                  <label class="control-label">Your name</label>
+                                  <label class="control-label" for="name">Your name</label>
                                   <input id="name" type="text" class="form-control form-control-lg" placeholder="">
                                   <span class="bar"></span>
                                 </div>
@@ -155,8 +155,30 @@
                             <div class="row">
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
-                                  <label class="control-label">Email address</label>
+                                  <label class="control-label" for="email_address">Email address</label>
                                   <input id="email_address" type="text" class="form-control form-control-lg" placeholder="">
+                                  <span class="bar"></span>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="email_consent">
+                                    <label class="form-check-label" for="email_consent">
+                                      <b>I agree to receive newsletters containing updates, promotions and information regarding Scope-R.</b>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="form-group has-floating-label">
+                                  <label class="control-label" for="help">How can we help you?</label>
+                                  <select id="help" class="form-control">
+                                    <option value="" disabled selected></option>
+                                    <option>I want more information</option>
+                                    <option>I want to see a demo</option>
+                                    <option>I want to join the beta program</option>
+                                    <option>Other</option>
+                                  </select>
                                   <span class="bar"></span>
                                 </div>
                               </div>
@@ -165,7 +187,7 @@
                             <div class="row">
                               <div class="col-12">
                                 <div class="form-group has-floating-label">
-                                  <label class="control-label">Type your message</label>
+                                  <label class="control-label" for="message">Additional details</label>
                                   <textarea id="message" class="form-control" rows="5" placeholder=""></textarea>
                                   <span class="bar"></span>
                                 </div>
@@ -332,25 +354,19 @@
   <script src="./assets/vendor/vide/vide.min.js"></script>
   <script src="./assets/vendor/viewport-checker/viewportchecker.min.js"></script>
   <script src="./assets/vendor/wow/wow.min.js"></script>
-  <script src="./assets/js/scope-r.js"></script>
 
   <!-- Isotope -->
   <script src="./assets/vendor/isotope/isotope.min.js"></script>
   <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
   <!-- Google maps -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGKzKgTs5SMMVLEHQG65d896jVNMizoJw"
-    type="text/javascript"></script>
-
-  <!-- TODO: Apply style:
-      https://snazzymaps.com/explore?text=&sort=&tag=&color=blue -->
-
-  <script src="./assets/js/google-maps/google-maps-blue.js"></script>
+  <script id="mapsendpoint" type="text/javascript"></script>
 
   <!-- App JS -->
   <script src="./assets/js/boomerang.min.js"></script>
-  <script src="./assets/js/scope-r.js"></script>
+  <script src="./assets/js/scope-r-all.min.js"></script>
 
+  <script src="./assets/js/google-maps/google-maps-blue.js" async></script>
 </body>
 
 </html>

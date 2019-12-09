@@ -63,7 +63,10 @@ function initMap() {
     });
 }
 
-google.maps.event.addDomListener(window, 'load', initMap);
+//Initialize map after the window is done loading
+$(window).on('load', function () {
+      initMap();
+ });
 
 $('a[data-type="gmap"]').on('shown.bs.tab', function(e) {
     initialize();

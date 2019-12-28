@@ -12,7 +12,7 @@
   <meta name="author" content="Scope-R">
 
   <!-- TODO -->
-  <title>Scope-R - News</title>
+  <title>Scope-R - Scope creep and me</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -76,8 +76,8 @@
                 <div class="container navbar-container">
                   <!-- Brand/Logo -->
                   <a class="navbar-brand" href="../../index.html">
-                    <img src="../assets/images/logo/logo-1-a.png" class="d-none d-lg-inline-block" alt="Boomerang">
-                    <img src="../assets/images/logo/logo-1-a.png" class="d-lg-none" alt="Boomerang"> </a>
+                    <img src="../assets/images/logo/logo-1-a.png" class="d-none d-lg-inline-block" alt="Scope-R">
+                    <img src="../assets/images/logo/logo-1-a.png" class="d-lg-none" alt="Scope-R"> </a>
 
                   <div class="d-inline-block">
                     <!-- Navbar toggler  -->
@@ -183,8 +183,8 @@
                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
                   var disqus_config = function() {
-                    this.page.url = "https://scope-r.disqus.com"; // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = 1; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    this.page.url = window.location; // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                   };
 
                   (function() { // DON'T EDIT BELOW THIS LINE

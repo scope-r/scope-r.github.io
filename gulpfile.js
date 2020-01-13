@@ -66,9 +66,9 @@ function html() {
 async function watchFiles() {
   gulp.watch(src.concat('/assets/**/*.scss'), scss);
   gulp.watch([src.concat('/assets/**/*.js'),
-  '!'.concat(src).concat('/assets/**/*.min.js'),
-  '!'.concat(src).concat('/assets/**/scope-r-all.js')], js);
-  gulp.watch(src.concat('/*.html'), html);
+              '!'.concat(src).concat('/assets/**/*.min.js'),
+              '!'.concat(src).concat('/assets/**/scope-r-all.js')], js);
+  gulp.watch(src.concat('/**/*.html'), html);
 }
 
 async function copyFiles() {

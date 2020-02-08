@@ -156,7 +156,7 @@ $btn-text-colors: $color-base-text-1, $color-base-text-2, $color-base-text-3, $c
     .btn-base-#{$i}.active,
     .btn-base-#{$i}:focus,
     .btn-base-#{$i}:hover {
-        background-color: darken(nth($btn-colors, $i), 10%);
+        background-color: lighten(nth($btn-colors, $i), 10%);
         color: nth($btn-text-colors, $i);
     }
     // Bordered (no bg) button styles

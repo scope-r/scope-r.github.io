@@ -99,8 +99,9 @@
                       <li class="nav-item dropdown">
                         <a href="index.html" class="nav-link">Home</a>
                       </li>
-                      <!-- This is commented out because we will come back to it in the
-                      future in order to incorporate it into the product. -->
+                      <li class="nav-item dropdown">
+                        <a href="features.html" class="nav-link">Features</a>
+                      </li>
                       <li class="nav-item dropdown">
                         <a href="blog.html" class="nav-link">Blog</a>
                       </li>
@@ -127,22 +128,21 @@
                 <div class="container pb-5">
                   <div class="row pb-5 align-items-center">
                     <div class="col-lg-5">
-                      <h2 class="heading heading-inverse heading-1 strong-600 text-normal line-height-1_2 animated"
-                        data-animation-in="fadeInDownBig" data-animation-delay="200">
+                      <h2 class="heading heading-inverse heading-1 strong-600 text-normal line-height-1_2 animated fadeInDownBig delay-1s">
                         Simplifying the art of estimation
                       </h2>
-                      <p class="lead c-white animated mt-4" data-animation-in="fadeInUpBig" data-animation-delay="200">
+                      <p class="lead c-white animated fadeInUpBig delay-1s mt-4">
                         Scope-R is an automation tool that allows sales and services teams to estimate work by
                         following a unified process and methodology.
                       </p>
 
-                      <button class="btn btn-styled btn-lg btn-base-2 btn-circle mt-4 animated scroll-me" data-scroll-to="#initial_section" data-scroll-to-offset="0" data-animation-in="fadeInUpBig" data-animation-delay="200">
+                      <button class="btn btn-styled btn-lg btn-base-2 btn-circle mt-4 animated fadeInUpBig delay-1s scroll-me" data-scroll-to="#initial_section" data-scroll-to-offset="0">
                         See what we do
                       </button>
                     </div>
 
                     <div class="col-md-6 col-lg-6 ml-md-auto pt-5">
-                      <div class="block block-image-holder z-depth-3 animated" data-animation-in="fadeInRightBig" data-animation-delay="200">
+                      <div class="block block-image-holder z-depth-3 animated fadeInRightBig delay-1s">
                         <div class="block-image">
                           <img src="./assets/images/prv/app/dashboard.png" class="img-center">
                           <!--
@@ -167,161 +167,213 @@
               </div>
             </section>
 
-            <section id="initial_section"  class="slice sct-color-1">
 
-              <div class="container">
-                <div class="row cols-xs-space cols-sm-space cols-md-space">
-                  <div class="col-12 col-lg-4 animate-on-scroll fadeInDown">
-                    <div class="icon-block icon-block--style-1-v5 px-4">
-                      <div class="block-icon">
-                        <i class="icon-basic-accelerator"></i>
-                      </div>
-                      <div class="block-content">
-                        <h3 class="heading heading-4 strong-600 text-capitalize">Accelerate Bid Response</h3>
-                        <p>
-                          Bid response is a repetitive and manual process that uses a variety of disparate documents and
-                          methods. We help your team automate the bid response process.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+            <!-- We've been there -->
+            <section class="slice-lg sct-color-1" id="initial_section">
+                <div class="container no-padding">
+                    <div class="row row-no-padding">
+                        <div class="col-md-12">
+                            <div class="section-title section-title--style-1 text-center mb-3">
+                                <h3 class="section-title-inner text-normal">
+                                    <span>We've been there.</span>
+                                </h3>
+                                <span class="section-title-delimiter clearfix d-none"></span>
+                            </div>
 
-                  <div class="col-12 col-lg-4 animate-on-scroll fadeInDown" data-wow-delay="0.3s">
-                    <div class="icon-block icon-block--style-1-v5 px-4">
-                      <div class="block-icon">
-                        <i class="icon-basic-mixer2"></i>
-                      </div>
-                      <div class="block-content">
-                        <h3 class="heading heading-4 strong-600 text-capitalize">Provide Accurate Estimates</h3>
-                        <p>
-                          Providing estimates has been an inexact science for far too long. We add structure to the
-                          mystical world of estimation so that it is no longer limited by your skillset.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                            <span class="clearfix"></span>
 
-                  <div class="col-12 col-lg-4 animate-on-scroll fadeInDown" data-wow-delay="0.6s">
-                    <div class="icon-block icon-block--style-1-v5 px-4">
-                      <div class="block-icon">
-                        <i class="icon-basic-archive-full"></i>
-                      </div>
-                      <div class="block-content">
-                        <h3 class="heading heading-4 strong-600 text-capitalize">Collaborate Quickly</h3>
-                        <p>
-                          Collaboration during the scoping process is almost impossible for some.
-                          We help you manage your team and tasks to provide the best pricing possible.
-                        </p>
-                      </div>
+                            <div class="text-center">
+                                <div class="fluid-paragraph fluid-paragraph-lg">
+                                    <p class="lead line-height-1_8 c-gray-light strong-300">
+                                      We know a thing or two about estimating projects and we agree that it can be very difficult. 
+                                      We are not simply another project management tool (in fact Scope-R is not a project management tool at all). 
+                                      We are here to give you the confidence you need when estimating projects!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="milestone-counter text-center">
+                                <span class="milestone-count-non-interactive c-base-1 strong-600">1 in </span>
+                                <span class="milestone-count c-base-1 strong-600" data-from="0" data-to="20" data-speed="1000" data-refresh-interval="100">0</span>
+                                <h4 class="milestone-info heading-5 c-gray-light text-normal">projects proposals are won.</h4> <!--TODO -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="milestone-counter text-center">
+                                <span class="milestone-count c-base-1 strong-600" data-from="0" data-to="43" data-speed="1500" data-refresh-interval="100">0</span>
+                                <span class="milestone-count-non-interactive c-base-1 strong-600">%</span>
+                                <h4 class="milestone-info heading-5 c-gray-light text-normal">of technical projects exceed budget.</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="milestone-counter text-center">
+                            <span class="milestone-count c-base-1 strong-600" data-from="0" data-to="44" data-speed="2000" data-refresh-interval="100">0</span>
+                            <span class="milestone-count-non-interactive c-base-1 strong-600">%</span>
+                            <h4 class="milestone-info heading-5 c-gray-light text-normal">of project managers don’t rely on software.</h4>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </section>
+
+            <!-- Beta CTA -->
+            <section class="slice-sm sct-color-2 border-top border-bottom">
+                <div class="container">
+                    <div class="px-4">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-lg-9">
+                                    <div class="text-center text-lg-left">
+                                        <h1 class="heading heading-4 text-normal strong-500">
+                                            Success comes from proper planning, let us get you there.
+                                        </h1>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="py-4 text-center text-lg-right">
+                                        <a href="features.html" class="btn btn-styled btn-base-1 btn-circle"> <!-- TODO -->
+                                          Try Scope-R now!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="slice-lg sct-color-1">
               <div class="container">
-                <div class="row align-items-md-center cols-xs-space cols-md-space cols-lg-space">
-                  <div class="col-md-5">
-                    <div class="px-3 py-3 text-center text-lg-left">
-                      <h3 class="heading heading-3 strong-600">
-                        A unified view.
+                  <div class="section-title section-title--style-1 text-center mb-2">
+                      <h3 class="section-title-inner heading-2 strong-500 text-normal">
+                          Problems With Project Estimates
                       </h3>
-                      <p class="lead line-height-1_6 mt-4">
-                        Scope-R provides an overview of all your project scopes to align your sales and services teams.
-                        From new bid responses to change requests, we have your back.
-                      </p>
-                      <!-- <a href="#" class="btn btn-styled btn-base-2 btn-circle btn-icon-right mt-4 px-4 strong-600 text-uppercase">
-                        Learn more
-                        <i class="icon ion-arrow-right-c"></i>
-                      </a> -->
-                    </div>
+                      <span class="section-title-delimiter clearfix d-none"></span>
                   </div>
 
-                  <div class="col-md-6 ml-lg-auto">
-                    <img src="./assets/images/prv/app/scopelist.png" class="img-fluid img-center rounded z-depth-3-top">
+                  <span class="clearfix"></span>
+
+                  <div class="fluid-paragraph fluid-paragraph-sm text-center">
+                      <p class="text-lg line-height-1_8 c-gray-light strong-300">We are all too familiar with the struggles of project estimation. Let us show you how we can help.</p>
                   </div>
-                </div>
+
+                  <span class="space-xs-xl"></span>
+
+                  <div class="row align-items-center cols-xs-space cols-sm-space cols-md-space">
+                      <div class="col-lg-6">
+                          <div class="block block-image">
+                              <img src="../../assets/images/prv/other/img-device-4-workbook.png" class="img-responsive">
+                          </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                          <div class="">
+                              <div class="icon-block icon-block--style-1-v3">
+                                  <div class="block-icon">
+                                      <i class="icon-basic-eye-closed"></i>
+                                  </div>
+                                  <div class="block-content">
+                                      <h3 class="heading heading-6 strong-600">
+                                          Inacurate Estimates
+                                      </h3>
+                                      <p>
+                                          Do not leave project success to chance. Provide accurate estimates by using the right methodology.
+                                      </p>
+                                  </div>
+                              </div>
+
+                              <span class="space-xs-md"></span>
+
+                              <div class="icon-block icon-block--style-1-v3">
+                                  <div class="block-icon">
+                                      <i class="icon-basic-exclamation"></i>
+                                  </div>
+                                  <div class="block-content">
+                                      <h3 class="heading heading-6 strong-600">
+                                          Undefined Risks
+                                      </h3>
+                                      <p>
+                                          Making assumptions that could come back to hurt you and your clients? We make those clear to everyone involved.
+                                      </p>
+                                  </div>
+                              </div>
+
+                              <span class="space-xs-md"></span>
+
+                              <div class="icon-block icon-block--style-1-v3">
+                                  <div class="block-icon">
+                                      <i class="icon-basic-trashcan-full"></i>
+                                  </div>
+                                  <div class="block-content">
+                                      <h3 class="heading heading-6 strong-600">
+                                        Uncompetitive Pricing
+                                      </h3>
+                                      <p>
+                                          Pricing yourself out of bids due to the lack of details? We help you manage risks and contingency to help you bid better. 
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </section>
-
-            <section class="slice-lg sct-color-1">
-              <div class="container">
-                <div class="row align-items-lg-center cols-xs-space cols-md-space cols-lg-space">
-                  <div class="col-lg-5 ml-lg-auto order-lg-2">
-                    <div class="px-3 py-3 text-center text-lg-left">
-                      <h3 class="heading heading-3 strong-600 line-height-1_6">
-                        How long will that take?
-                      </h3>
-                      <p class="lead line-height-1_6 mt-4">
-                        With Scope-R you don’t have to be a SCRUM Master (or even know what that means) to estimate work
-                        following the best concepts and methodology available.
-
-                      </p>
-                      <!-- <a href="#" class="btn btn-styled btn-base-2 btn-circle btn-icon-right mt-4 px-4 strong-600 text-uppercase">
-                        Learn more
-                        <i class="icon ion-arrow-right-c"></i>
-                      </a> -->
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <img src="./assets/images/prv/app/categorizetask.png" class="img-fluid img-center rounded z-depth-3-top">
-                  </div>
+          </section>
+           
+          <!-- Read the blogs -->
+          <section class="slice-lg sct-color-2 border-top">
+            <div class="container">
+                <div class="section-title section-title--style-1 text-center">
+                    <h3 class="section-title-inner text-normal">
+                        <span>Read the blogs</span>
+                    </h3>
                 </div>
-              </div>
-            </section>
 
-            <section class="slice-lg sct-color-1">
-              <div class="container">
-                <div class="row align-items-md-center cols-xs-space cols-md-space cols-lg-space">
-                  <div class="col-md-5">
-                    <div class="px-3 py-3 text-center text-lg-left">
-                      <h3 class="heading heading-3 strong-600">
-                        Pricing made easy.
-                      </h3>
-                      <p class="lead line-height-1_6 mt-4">
-                        Scope-R guides you through the project estimation process with easy-to-use scoping exercises that ensure accuracy.
-                      </p>
-                      <!-- <a href="#" class="btn btn-styled btn-base-2 btn-circle btn-icon-right mt-4 px-4 strong-600 text-uppercase">
-                        Learn more
-                        <i class="icon ion-arrow-right-c"></i>
-                      </a> -->
+                <div class="row cols-md-space cols-sm-space cols-xs-space">
+                    <div class="col-lg-6">
+                        <div class="block block-image-holder image-animate-wrapper">
+                            <div class="block-image image-animate--hover">
+                                <a href="./posts/2019-12-28-how-to-estimate-projects.html">
+                                  <img src="./assets/images/prv/blog/schedule-planning-startup-launching-7376.jpg" class="img-fluid img-center">
+                                </a>
+                            </div>
+
+                            <div class="pt-4">
+                                <span class="heading heading-xs text-uppercase strong-300">December 28, 2019</span>
+                                <a href="./posts/2019-12-28-how-to-estimate-projects.html" class="heading heading-4 d-block strong-500 mt-1">How to estimate projects</a>
+                                <p class="mt-3">
+                                  What does your estimation process look like today? Let me guess, you get a call or an email from a client you’ve been working with or talking to for a while. This is it...
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="col-md-6 ml-lg-auto">
-                    <img src="./assets/images/prv/app/estimatetask.png" class="img-fluid img-center rounded z-depth-3-top">
-                  </div>
-                </div>
-              </div>
-            </section>
+                    <div class="col-lg-6">
+                        <div class="block block-image-holder image-animate-wrapper">
+                            <div class="block-image image-animate--hover">
+                                <a href="./posts/2019-12-09-scope-creep-and-me.html">
+                                    <img src="./assets/images/prv/blog/pexels-photo-320956.jpeg">
+                                </a>
+                            </div>
 
-            <section class="slice-lg sct-color-1">
-              <div class="container">
-                <div class="row align-items-lg-center cols-xs-space cols-md-space cols-lg-space">
-                  <div class="col-lg-5 ml-lg-auto order-lg-2">
-                    <div class="px-3 py-3 text-center text-lg-left">
-                      <h3 class="heading heading-3 strong-600 line-height-1_6">
-                        Now what?
-                      </h3>
-                      <p class="lead line-height-1_6 mt-4">
-                        Now that you've accurately estimated your project, all you have to do is add our graphics and diagrams to your
-                        very own bid response documents!
-                      </p>
-                      <!-- <a href="#" class="btn btn-styled btn-base-2 btn-circle btn-icon-right mt-4 px-4 strong-600 text-uppercase">
-                        Learn more
-                        <i class="icon ion-arrow-right-c"></i>
-                      </a> -->
+                            <div class="pt-4">
+                                <span class="heading heading-xs text-uppercase strong-300">December 8, 2019</span>
+                                <a href="#" class="heading heading-4 d-block strong-500 mt-1">Scope Creep And Me</a>
+                                <p class="mt-3">
+                                    You know that saying, “the silent killer”, well that’s pretty much what this is. 
+                                    I have implemented many solutions throughout my professional career...
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <img src="./assets/images/prv/app/scopereview.png" class="img-fluid img-center rounded z-depth-3-top">
-                  </div>
                 </div>
-              </div>
-            </section>
+            </div>
+        </section>
+            
 
             <section class="slice-xl bg-base-1" style="padding-top: 150px;">
               <div class="shape-container" data-shape-fill="sct-color-1" data-shape-style="opaque_waves_1"
@@ -380,6 +432,11 @@
                             </a>
                           </li>
                           <li>
+                            <a href="features.html" title="Features">
+                              Features
+                            </a>
+                          </li>
+                          <li>
                             <a href="blog.html" title="Blog">
                               Blog
                             </a>
@@ -425,7 +482,7 @@
                             </a>
                           </li>
                         </ul>
-                        <p class="lead mt-4 mb-4">
+                        <p class="lead mt-5 mb-3">
                           E: <a href="mailto:info@scope-r.app">info@scope-r.app</a>
                         </p>
                       </div>

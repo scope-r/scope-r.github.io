@@ -6129,7 +6129,7 @@ a > .block {
 .btn-base-1.active,
 .btn-base-1:focus,
 .btn-base-1:hover {
-  background-color: #00020c;
+  background-color: #001472;
   color: #FFF;
 }
 
@@ -6157,7 +6157,7 @@ a > .block {
 .btn-base-2.active,
 .btn-base-2:focus,
 .btn-base-2:hover {
-  background-color: #f2b400;
+  background-color: #ffd459;
   color: #2b2b2c;
 }
 
@@ -6185,7 +6185,7 @@ a > .block {
 .btn-base-3.active,
 .btn-base-3:focus,
 .btn-base-3:hover {
-  background-color: #a6b2d2;
+  background-color: #eaecf4;
   color: #000b3f;
 }
 
@@ -6213,7 +6213,7 @@ a > .block {
 .btn-base-4.active,
 .btn-base-4:focus,
 .btn-base-4:hover {
-  background-color: #cfcdcd;
+  background-color: white;
   color: #c8cfe3;
 }
 
@@ -6241,7 +6241,7 @@ a > .block {
 .btn-base-5.active,
 .btn-base-5:focus,
 .btn-base-5:hover {
-  background-color: #e6e6e6;
+  background-color: white;
   color: #0A0814;
 }
 
@@ -22682,4 +22682,13 @@ pre {
 
 .icons-holder .mobile {
   font-size: 34px;
+}
+
+.milestone-count-non-interactive {
+  font-size: 60px;
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
 }

@@ -52,6 +52,7 @@ function js() {
     .pipe(concat('scope-r-all.js'))
     .pipe(gulp.dest(dist.concat('/assets/js')))
     .pipe(rename('scope-r-all.min.js'))
+    .pipe(uglify())
     .pipe(gulp.dest(dist.concat('/assets/js')))
     .pipe(connect.reload());
 }

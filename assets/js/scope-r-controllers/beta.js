@@ -1,5 +1,4 @@
 window.scoper.beta.formhandler = function (endpoint) {
-    debugger;
     $("#beta_submit").click(function (event) {
       event.stopImmediatePropagation();
       event.preventDefault(); 

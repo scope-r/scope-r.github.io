@@ -15,7 +15,7 @@
 
   <meta name="theme-color" content="#000b3f" />
 
-  <title>Scope-R - Contact</title>
+  <title>Scope-R - Blog</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -44,14 +44,14 @@
   <!-- Global style (main) -->
   <link id="stylesheet" type="text/css" href="./assets/css/boomerang-scope-r.min.css" rel="stylesheet" media="screen">
 
+  <!-- Custom style - Remove if not necessary -->
+  <link type="text/css" href="./assets/css/custom-style.css" rel="stylesheet">
+
   <!-- Favicon -->
   <link href="./assets/images/favicon.png" rel="icon" type="image/png">
 
 
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-  <!-- Recaptcha -->
-  <script src="https://www.google.com/recaptcha/api.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147249589-1"></script>
@@ -59,6 +59,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
+
     gtag('config', 'UA-147249589-1');
   </script>
 
@@ -81,8 +82,8 @@
                 <div class="container navbar-container">
                   <!-- Brand/Logo -->
                   <a class="navbar-brand" href="../../index.html">
-                    <img src="./assets/images/logo/logo-1-a.png" class="d-none d-lg-inline-block" alt="Boomerang">
-                    <img src="./assets/images/logo/logo-1-a.png" class="d-lg-none" alt="Boomerang"> </a>
+                    <img src="./assets/images/logo/logo-1-a.png" class="d-none d-lg-inline-block" alt="Scope-R">
+                    <img src="./assets/images/logo/logo-1-a.png" class="d-lg-none" alt="Scope-R"> </a>
 
                   <div class="d-inline-block">
                     <!-- Navbar toggler  -->
@@ -124,104 +125,43 @@
               </nav>
             </div>
 
-            <section class="sct-color-1 slice-xl slice--offset-top has-bg-cover bg-size-cover d-flex align-items-center"
+            <section class="slice-xl slice--offset-top has-bg-cover bg-size-cover"
               style="background-image: url(./assets/images/backgrounds/slider/img-52.jpg); background-position: bottom center;">
               <span class="mask mask-base-1--style-1"></span>
-              <div class="col" style="padding: 4rem 0;">
-                <div class="container">
-                  <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-5 text-center">
-                      <h2 class="heading heading-inverse heading-1 strong-600 text-normal line-height-1_2 animated"
-                        data-animation-in="fadeInDownBig" data-animation-delay="200">
-                        Let's talk.
+              <div class="container container-lg">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="py-5">
+                      <h2 class="heading heading-inverse heading-xl strong-600 text-capitalize line-height-1_2">
+                        Blog
                       </h2>
-                      <p class="lead c-white animated mt-4" data-animation-in="fadeInUpBig" data-animation-delay="200">
-                        Interested? Questions, concerns, requests, we want to hear about it! Drop us a message below.
+                      <p class="lead c-white mt-3">
+                        Stay up to date with our products and get access to our scope related knowledge base.
                       </p>
-                    </div>
-                  </div>
-
-                  <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                      <div class="card relative z-depth-5 mt-5 mb--300" style="z-index: 1000;">
-                        <div class="card-body px-5 py-5">
-                          <div id="contactform" class="form-default form-material">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group has-floating-label">
-                                  <label class="control-label" for="name">Your name</label>
-                                  <input id="name" type="text" class="form-control form-control-lg" placeholder="">
-                                  <span class="bar"></span>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group has-floating-label">
-                                  <label class="control-label" for="email_address">Email address</label>
-                                  <input id="email_address" type="text" class="form-control form-control-lg"
-                                    placeholder="">
-                                  <span class="bar"></span>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="email_consent">
-                                    <label class="form-check-label" for="email_consent">
-                                      <b>I agree to receive newsletters containing updates, promotions and information
-                                        regarding Scope-R.</b>
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group has-floating-label">
-                                  <label class="control-label" for="help">How can we help you?</label>
-                                  <select id="help" class="form-control">
-                                    <option value="" disabled selected></option>
-                                    <option>I want more information</option>
-                                    <option>I want to see a demo</option>
-                                    <option>I want to join the beta program</option>
-                                    <option>Other</option>
-                                  </select>
-                                  <span class="bar"></span>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group has-floating-label">
-                                  <label class="control-label" for="message">Additional details</label>
-                                  <textarea id="message" class="form-control" rows="5" placeholder=""></textarea>
-                                  <span class="bar"></span>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="mt-4">
-                              <div class="g-recaptcha" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"></div>
-
-                              <button id="form_submit" class="btn btn-styled btn-base-2 btn-circle mt-5">
-                                Send message
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-
-            <section class="pb-0 sct-color-1">
-              <!-- Map canvas -->
-              <div id="google-map">
-                <!-- #google-container will contain the map  -->
-                <div id="map_canvas" class="map-canvas" style="height: 800px;"></div>
-              </div>
+            
+            <section class="cta-wrapper">
+                <a href="features.html">
+                    <div class="slice cta-inner bg-base-2">
+                        <div class="flex flex-items-xs-middle">
+                            <div class="flex-wrap-item">
+                                <div class="sct-inner ">
+                                    <div class="container">
+                                        <div class="text-center">
+                                            <h1 class="heading heading-3 text-normal c-base-text-1 strong-400">
+                                                Learn about what Scope-R can do for you!
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </section>
 
             <!-- FOOTER -->
@@ -235,9 +175,9 @@
                         <span class="clearfix"></span>
                         <span class="heading heading-sm c-base-text-4 strong-400">Estimation done well.</span>
 
-                        <div id="valid_date" class="copyright mt-4 pt-1">
+                        <div class="copyright mt-4 pt-1">
                           <p>
-                            Copyright &copy; $date <a href="#" target="_blank">
+                            Copyright &copy; 2019 <a href="#" target="_blank">
                               <strong>Scope-R</strong>
                             </a> -
                             All rights reserved
@@ -292,25 +232,25 @@
                         <ul class="social-media social-media--style-1-v4">
                           <li>
                             <a href="https://www.facebook.com/scoperapp" class="facebook" target="_blank"
-                              data-original-title="Facebook">
+                              data-toggle="tooltip" data-original-title="Facebook">
                               <i class="fa fa-facebook"></i>
                             </a>
                           </li>
                           <li>
                             <a href="https://www.instagram.com/scope_r_app" class="instagram" target="_blank"
-                              data-original-title="Instagram">
+                              data-toggle="tooltip" data-original-title="Instagram">
                               <i class="fa fa-instagram"></i>
                             </a>
                           </li>
                           <li>
                             <a href="https://twitter.com/scope_r_app" class="twitter" target="_blank"
-                              data-original-title="Twitter">
+                              data-toggle="tooltip" data-original-title="Twitter">
                               <i class="fa fa-twitter"></i>
                             </a>
                           </li>
                           <li>
                             <a href="https://www.linkedin.com/company/scope-r-app" class="linkedin" target="_blank"
-                              data-original-title="Github">
+                              data-toggle="tooltip" data-original-title="Github">
                               <i class="fa fa-linkedin"></i>
                             </a>
                           </li>
@@ -324,44 +264,12 @@
                 </div>
               </div>
             </footer>
+
           </div>
         </div>
       </div><!-- END: st-pusher -->
     </div><!-- END: st-container -->
   </div><!-- END: body-wrap -->
-
-  <div class="scopR-toasts">
-    <div id="submit-success-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;"
-      aria-live="polite" aria-atomic="true">
-      <div>
-        <div id="submit-success" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <strong class="mr-auto">Submitted Successfully</strong>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="toast-body">
-            Your message has been submitted successfully.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="submit-failure-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;">
-      <div id="submit-failure" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="mr-auto">Error in Submission</strong>
-          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="toast-body">
-          An error occured, please contact us at +1.613.914.2477
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- SCRIPTS -->
   <a href="#" class="back-to-top btn-back-to-top btn-base-2"></a>
@@ -408,14 +316,12 @@
   <script src="./assets/vendor/isotope/isotope.min.js"></script>
   <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
-  <!-- Google maps -->
-  <script id="mapsendpoint" type="text/javascript"></script>
+
 
   <!-- App JS -->
   <script src="./assets/js/boomerang.min.js"></script>
-  <script src="./assets/js/scope-r-all.js"></script>
+  <script src="./assets/js/scope-r-all.min.js"></script>
 
-  <script src="./assets/js/google-maps/google-maps-blue.js" async></script>
 </body>
 
 </html>

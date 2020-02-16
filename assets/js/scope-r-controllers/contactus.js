@@ -9,7 +9,7 @@ window.scoper.contactus.formhandler = function (endpoint) {
 
       $.post({
         url: endpoint,
-        data: window.scoper.slack.assembleMessage(),
+        data: window.scoper.slack.assembleContactUsMessage(),
         success: window.scoper.contactus.formsuccess,
         error: window.scoper.contactus.formerror
       });
@@ -20,7 +20,6 @@ window.scoper.contactus.formhandler = function (endpoint) {
 };
 
 window.scoper.contactus.formsuccess = function (response) {
-  debugger;
   $('#submit-success').toast({
     animation: true,
     delay: 2500
@@ -31,7 +30,6 @@ window.scoper.contactus.formsuccess = function (response) {
 };
 
 window.scoper.contactus.formerror = function (response) {
-  debugger;
   $('#submit-failure').toast({
     animation: true,
     delay: 1000

@@ -23,6 +23,7 @@
 
   //Contact Us form submit handler
   $(function() {
+    debugger;
     window.scoper.contactus.formhandler(atob(endpoints.slack));
     window.scoper.beta.formhandler(atob(endpoints.slack));
   });

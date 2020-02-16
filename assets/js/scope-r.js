@@ -3,6 +3,7 @@
   window.scoper = window.scoper || {};
   window.scoper.slack = window.scoper.slack || {};
   window.scoper.contactus = window.scoper.contactus || {};
+  window.scoper.beta = window.scoper.beta || {};
 
   var date = new Date();
   var this_year = date.getFullYear();
@@ -23,5 +24,6 @@
   //Contact Us form submit handler
   $(function() {
     window.scoper.contactus.formhandler(atob(endpoints.slack));
+    window.scoper.beta.formhandler(atob(endpoints.slack));
   });
 })(jQuery);

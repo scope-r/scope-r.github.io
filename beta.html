@@ -170,13 +170,17 @@
                             <div class="col-md-12">
                               <div class="form-group">
                                 <label class="control-label">Tell us about yourself</label>
-                                <input id="info" type="input" class="form-control form-control-lg"> 
+                                <input id="info" type="input" class="form-control form-control-lg">
                               </div>
                             </div>
                           </div>
-                          <button type="submit" class="btn btn-styled  btn-base-1 mt-4">
-                            Register
-                          </button>
+                          <div class="mt-4">
+                            <div class="g-recaptcha" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"></div>
+
+                            <button id="beta_submit" class="btn btn-styled btn-base-2 btn-circle mt-5">
+                              Send message
+                            </button>
+                          </div>
                         </form>
                       </div>
                     </div>
@@ -332,6 +336,9 @@
   <script src="./assets/vendor/vide/vide.min.js"></script>
   <script src="./assets/vendor/viewport-checker/viewportchecker.min.js"></script>
   <script src="./assets/vendor/wow/wow.min.js"></script>
+
+  <!-- Recaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 
   <!-- Isotope -->
   <script src="./assets/vendor/isotope/isotope.min.js"></script>

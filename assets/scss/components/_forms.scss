@@ -1066,20 +1066,6 @@ input:checked + .toggle-switch-slider:before {
     color: $color-base-text-1;
 }
 
-.form-card--style-2 .form-header:after {
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-width: 14px;
-    top: 100%;
-    left: 50%;
-    border-top-color: $color-base-1;
-    margin-left: -14px;
-}
-
 .form-card--style-2 .form-header .form-header-icon i {
     font-size: 3rem;
     color: $color-base-text-1;

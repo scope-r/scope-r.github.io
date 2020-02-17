@@ -47,4 +47,7 @@ window.scoper.contactus.resetFormFields = function() {
   $("#email_consent").prop("checked", false);
   $("#help").val('');
   $("#message").val('');
+
+  // Reset the Google captcha after submission
+  grecaptcha.reset(); 
 }

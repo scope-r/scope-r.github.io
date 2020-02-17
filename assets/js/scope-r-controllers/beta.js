@@ -43,8 +43,9 @@ window.scoper.beta.formhandler = function (endpoint) {
   
   window.scoper.beta.resetFormFields = function() {
     $("#name").val('');
-    $("#email_address").val('');
-    $("#email_consent").prop("checked", false);
-    $("#help").val('');
-    $("#message").val('');
+    $("#email").val('');
+    $("#info").val(''); 
+    
+    // Reset the Google captcha after submission
+    grecaptcha.reset(); 
   }

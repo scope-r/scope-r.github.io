@@ -76,7 +76,7 @@ window.scoper.slack.contactUsPayload = {
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "*Contact Details:* \n\n Name: _$name_ \n\n Email: _$email_ \n\n General info: _$info"
+				"text": "*Contact Details:* \n\n Name: _$name_ \n\n Email: _$email_ \n\n Career Sector: _$career_ \n\n General info: _$info_"
 			}
 		},
 	]
@@ -88,5 +88,6 @@ window.scoper.slack.assembleBetaMessage = function(){
 
 	return message.replace("$name", $("#name").val())
 								.replace("$email", $("#email").val())
-								.replace("$info", $("#info").prop("checked"));
+								.replace("$career", $("#career").val())
+								.replace("$info", $("#info").val());
 };

@@ -82,8 +82,10 @@
                 <div class="container navbar-container">
                   <!-- Brand/Logo -->
                   <a class="navbar-brand" href="../../index.html">
-                    <img src="./assets/images/logo/scope-r-logo-yellow.png" class="d-none d-lg-inline-block scope-r-logo" alt="Scope-R">
-                    <img src="./assets/images/logo/scope-r-logo-yellow.png" class="d-lg-none scope-r-logo" alt="Scope-R"> </a>
+                    <img src="./assets/images/logo/scope-r-logo-yellow.png"
+                      class="d-none d-lg-inline-block scope-r-logo" alt="Scope-R">
+                    <img src="./assets/images/logo/scope-r-logo-yellow.png" class="d-lg-none scope-r-logo"
+                      alt="Scope-R"> </a>
 
                   <div class="d-inline-block">
                     <!-- Navbar toggler  -->
@@ -168,11 +170,33 @@
                             <div class="row">
                               <div class="col-md-12">
                                 <div class="form-group">
-                                  <label class="control-label">Tell us about yourself</label>
-                                  <input id="info" type="input" class="form-control form-control-lg">
+                                  <label class="control-label">Field of Work</label>
+                                  <select id="career" class="form-control form-control-lg">
+                                    <option value="">Please select an option</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="law">Law</option>
+                                    <option value="medicine">Medicine</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="engineering">Engineering</option>
+                                  </select>
                                 </div>
                               </div>
                             </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label class="control-label">Tell us about yourself</label>
+                                  <textarea style="resize: none" id="info" type="input"
+                                    class="form-control form-control-lg"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <span><center><i>By clicking I register you consent to being notified by email when eligible to
+                                      enter the program</i></center></span>
+                                </div>
+                              </div>
                             <div class="mt-4">
                               <div class="g-recaptcha" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"></div>
 
@@ -297,37 +321,37 @@
   </div><!-- END: body-wrap -->
 
   <div class="scopR-toasts">
-      <div id="submit-success-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;"
-        aria-live="polite" aria-atomic="true">
-        <div>
-          <div id="submit-success" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <strong class="mr-auto">Submitted Successfully</strong>
-              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="toast-body">
-              Your message has been submitted successfully.
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div id="submit-failure-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;">
-        <div id="submit-failure" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div id="submit-success-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;"
+      aria-live="polite" aria-atomic="true">
+      <div>
+        <div id="submit-success" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
-            <strong class="mr-auto">Error in Submission</strong>
+            <strong class="mr-auto">Submitted Successfully</strong>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="toast-body">
-            An error occured, please contact us at +1.613.914.2477
+            Your message has been submitted successfully.
           </div>
         </div>
       </div>
     </div>
+
+    <div id="submit-failure-div" class="d-none position-fixed zindex-fixed" style="top: 1rem; right: 1rem;">
+      <div id="submit-failure" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="mr-auto">Error in Submission</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          An error occured, please contact us at +1.613.914.2477
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- SCRIPTS -->
   <a href="#" class="back-to-top btn-back-to-top btn-base-2"></a>

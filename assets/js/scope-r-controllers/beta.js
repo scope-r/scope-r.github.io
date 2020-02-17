@@ -44,6 +44,7 @@ window.scoper.beta.formhandler = function (endpoint) {
   window.scoper.beta.resetFormFields = function() {
     $("#name").val('');
     $("#email").val('');
+    $("#career").val('');
     $("#info").val(''); 
     
     // Reset the Google captcha after submission

@@ -112,11 +112,16 @@
                       <li class="nav-item dropdown">
                         <a href="contact.html" class="nav-link c-white">Contact</a>
                       </li>
+                      <li class="nav-item dropdown d-lg-none pt-1">
+                        <a href="beta.html" class="btn btn-styled btn-sm btn-base-3 text-uppercase btn-circle">Join Beta
+                          <span class="badge badge-pill bg-base-2">Limited</span>
+                        </a>
+                      </li>
                     </ul>
                   </div>
 
                   <div class="pl-4 d-none d-lg-inline-block">
-                    <a href="beta.html" class="btn btn-styled btn-sm btn-base-3 text-uppercase btn-circle disabled">
+                    <a href="beta.html" class="btn btn-styled btn-sm btn-base-3 text-uppercase btn-circle">
                       Join Beta
                       <span class="badge badge-pill bg-base-2">Limited</span> </a>
                   </div>
@@ -132,7 +137,7 @@
                 <div class="container py-5">
                   <div class="row cols-xs-space">
                     <div class="col-lg-5">
-                      <div class="py-5">
+                      <div class="pb-5">
                         <h2 class="heading heading-inverse heading-xl strong-600 text-capitalize line-height-1_2">
                           Beta Program
                         </h2>
@@ -158,55 +163,57 @@
                             <h4 class="heading heading-4 strong-400 mb-4">Register Today!</h4>
                           </div>
 
-                          <div class="form-default mt-4" data-toggle="validator" role="form">
+                          <div class="form-default form-material mt-4" data-toggle="validator" role="form">
                             <div class="row">
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Name</label>
+                              <div class="col-12">
+                                <div class="form-group has-floating-label">
+                                  <label class="control-label" for="name">Your Name</label>
                                   <input id="name" type="text" class="form-control form-control-lg">
+                                  <span class="bar"></span>
                                 </div>
                               </div>
                             </div>
 
                             <div class="row">
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Email</label>
+                              <div class="col-12">
+                                <div class="form-group has-floating-label">
+                                  <label class="control-label" for="email">Email address</label>
                                   <input id="email" type="email" class="form-control form-control-lg">
+                                  <span class="bar"></span>
                                 </div>
                               </div>
                             </div>
 
                             <div class="row">
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Field of Work</label>
+                              <div class="col-12">
+                                <div class="form-group has-floating-label">
+                                  <label class="control-label" for="career">Field of Work</label>
                                   <select id="career" class="form-control form-control-lg">
-                                    <option value="">Please select an option</option>
+                                    <option value="" disabled selected></option>
                                     <option value="technology">Technology</option>
                                     <option value="law">Law</option>
                                     <option value="medicine">Medicine</option>
                                     <option value="construction">Construction</option>
                                     <option value="engineering">Engineering</option>
                                   </select>
+                                  <span class="bar"></span>
                                 </div>
                               </div>
                             </div>
                             <div class="row">
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Tell us about yourself</label>
+                              <div class="col-12">
+                                <div class="form-group has-floating-label">
+                                  <label class="control-label" for="info">Tell us about yourself</label>
                                   <textarea style="resize: none" id="info" type="input"
                                     class="form-control form-control-lg"></textarea>
+                                  <span class="bar"></span>
+                                  <label class="form-check-label" for="beta_submit">
+                                    <b>By clicking I register you consent to being notified by email when eligible to
+                                      enter the program</b>
+                                  </label>
                                 </div>
                               </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                  <span><center><i>By clicking I register you consent to being notified by email when eligible to
-                                      enter the program</i></center></span>
-                                </div>
-                              </div>
                             <div class="mt-4">
                               <div class="g-recaptcha" data-sitekey="6LeliLoUAAAAAE1rnxebURDxTz7xCAAfPcd_fhrO"></div>
 

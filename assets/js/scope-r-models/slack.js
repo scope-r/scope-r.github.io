@@ -51,8 +51,8 @@ window.scoper.slack.assembleContactUsMessage = function(){
 };
 
 
-window.scoper.slack.contactUsPayload = {
-	"text": "New Contact Request",
+window.scoper.slack.betaPayload = {
+	"text": "New Beta Request",
 	"blocks": [
 		{
 			"type": "section",
@@ -84,7 +84,7 @@ window.scoper.slack.contactUsPayload = {
 
 window.scoper.slack.assembleBetaMessage = function(){
 
-	var message = JSON.stringify(window.scoper.slack.contactUsPayload);
+	var message = JSON.stringify(window.scoper.slack.betaPayload);
 
 	return message.replace("$name", $("#name").val())
 								.replace("$email", $("#email").val())

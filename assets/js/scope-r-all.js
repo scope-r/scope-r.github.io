@@ -7,7 +7,8 @@
 
   var endpoints = {
     googlemaps: "aHR0cHM6Ly9tYXBzLmdvb2dsZWFwaXMuY29tL21hcHMvYXBpL2pzP2tleT1BSXphU3lCR0t6S2dUczVTTU1WTEVIUUc2NWQ4OTZqVk5NaXpvSnc=",
-    slack: "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVENRS0VCQTczL0JQU1RZUzEzSy9BRkJoVkpmRkloWGh6N0JvYkdNU09odFA="
+    contactUsSlack: "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVENRS0VCQTczL0JQU1RZUzEzSy9BRkJoVkpmRkloWGh6N0JvYkdNU09odFA=",
+    betaSlack: "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVENRS0VCQTczL0JVNjQzM002Si81Y3NGRU5FRUR2MW9EVXROUE5pRVAwOHc="
   };
 
   //Set Google Maps endpoints
@@ -15,8 +16,8 @@
 
   //Contact Us form submit handler
   $(function() {
-    window.scoper.contactus.formhandler(atob(endpoints.slack));
-    window.scoper.beta.formhandler(atob(endpoints.slack));
+    window.scoper.contactus.formhandler(atob(endpoints.contactUsSlack));
+    window.scoper.beta.formhandler(atob(endpoints.betaSlack));
   });
 })(jQuery);
 
@@ -65,10 +66,12 @@ window.scoper.beta.formhandler = function (endpoint) {
   
   window.scoper.beta.resetFormFields = function() {
     $("#name").val('');
-    $("#email_address").val('');
-    $("#email_consent").prop("checked", false);
-    $("#help").val('');
-    $("#message").val('');
+    $("#email").val('');
+    $("#career").val('');
+    $("#info").val(''); 
+    
+    // Reset the Google captcha after submission
+    grecaptcha.reset(); 
   }
 window.scoper.contactus.formhandler = function (endpoint) {
   $("#form_submit").click(function (event) {
@@ -119,6 +122,9 @@ window.scoper.contactus.resetFormFields = function() {
   $("#email_consent").prop("checked", false);
   $("#help").val('');
   $("#message").val('');
+
+  // Reset the Google captcha after submission
+  grecaptcha.reset(); 
 }
 window.scoper.slack.contactUsPayload = {
 	"text": "New Contact Request",
@@ -173,8 +179,8 @@ window.scoper.slack.assembleContactUsMessage = function(){
 };
 
 
-window.scoper.slack.contactUsPayload = {
-	"text": "New Contact Request",
+window.scoper.slack.betaPayload = {
+	"text": "New Beta Request",
 	"blocks": [
 		{
 			"type": "section",
@@ -198,7 +204,7 @@ window.scoper.slack.contactUsPayload = {
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "*Contact Details:* \n\n Name: _$name_ \n\n Email: _$email_ \n\n General info: _$info"
+				"text": "*Contact Details:* \n\n Name: _$name_ \n\n Email: _$email_ \n\n Career Sector: _$career_ \n\n General info: _$info_"
 			}
 		},
 	]
@@ -206,9 +212,10 @@ window.scoper.slack.contactUsPayload = {
 
 window.scoper.slack.assembleBetaMessage = function(){
 
-	var message = JSON.stringify(window.scoper.slack.contactUsPayload);
+	var message = JSON.stringify(window.scoper.slack.betaPayload);
 
 	return message.replace("$name", $("#name").val())
 								.replace("$email", $("#email").val())
-								.replace("$info", $("#info").prop("checked"));
+								.replace("$career", $("#career").val())
+								.replace("$info", $("#info").val());
 };

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Details at https://www.sitemaps.org/protocol.html -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.facebook.com/scoperapp/</loc>
+    </url>
+    <url>
+        <loc>https://www.instagram.com/scope_r_app/</loc>
+    </url>
+    <url>
+        <loc>https://twitter.com/scope_r_app/</loc>
+    </url>
+    <url>
+        <loc>https://www.linkedin.com/company/scope-r-app/</loc>
+    </url>
+</urlset> 

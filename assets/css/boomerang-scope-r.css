@@ -22668,5 +22668,10 @@ pre {
 
 .tap-targets {
   height: 50px;
-  width: 100px;
+}
+
+@media only screen and (min-width: 992px) {
+  .tap-targets {
+    height: auto;
+  }
 }

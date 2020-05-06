@@ -1,6 +1,4 @@
 // Put here all the styles you want to add or edit
-
-
 .milestone-count-non-interactive {
     font-size: 60px;
     font-family: "Nunito", sans-serif;
@@ -8,9 +6,16 @@
     margin: 0;
     font-weight: 600;
     text-transform: uppercase;
-  }
+}
 
-.scope-r-logo{
-  width: 128px;
-  height: 26px;
-}  
+.scope-r-logo {
+    width: 128px;
+    height: 26px;
+}
+
+.tap-targets {
+    height: 50px;
+    @media only screen and (min-width: 992px) {
+        height: auto;
+    }
+}

@@ -22665,3 +22665,13 @@ pre {
   width: 128px;
   height: 26px;
 }
+
+.tap-targets {
+  height: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+  .tap-targets {
+    height: auto;
+  }
+}

@@ -1,44 +1,42 @@
 {
-  "name": "scope-r.github.io",
-  "version": "0.0.7",
-  "description": "scope-r website",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scope-r/scope-r.github.io.git"
-  },
-  "author": {
-    "name": "Guillaume Clement",
-    "email": "guillaumecle.me@gmail.com",
-    "url": "https://guillaumecle.me/"
-  },
-  "contributors": [
-    {
-      "name": "Patrique Legault",
-      "email": "patrique.legault@gmail.com",
-      "url": "https://www.pat-lego.io/"
+    "name": "scope-r.github.io",
+    "version": "0.0.8",
+    "description": "scope-r website",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/scope-r/scope-r.github.io.git"
+    },
+    "author": {
+        "name": "Guillaume Clement",
+        "email": "guillaumecle.me@gmail.com",
+        "url": "https://guillaumecle.me/"
+    },
+    "contributors": [{
+        "name": "Patrique Legault",
+        "email": "patrique.legault@gmail.com",
+        "url": "https://www.pat-lego.io/"
+    }],
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/scope-r/scope-r.github.io/issues"
+    },
+    "homepage": "https://github.com/scope-r/scope-r.github.io#readme",
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "del": "^5.0.0",
+        "gulp": "^4.0.2",
+        "gulp-connect": "^5.7.0"
+    },
+    "devDependencies": {
+        "gulp-clean-css": "^4.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2"
     }
-  ],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/scope-r/scope-r.github.io/issues"
-  },
-  "homepage": "https://github.com/scope-r/scope-r.github.io#readme",
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "del": "^5.0.0",
-    "gulp": "^4.0.2",
-    "gulp-connect": "^5.7.0"
-  },
-  "devDependencies": {
-    "gulp-clean-css": "^4.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
-  }
 }

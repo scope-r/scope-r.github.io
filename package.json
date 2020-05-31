@@ -1,6 +1,6 @@
 {
     "name": "scope-r.github.io",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "scope-r website",
     "main": "gulpfile.js",
     "scripts": {
@@ -15,11 +15,13 @@
         "email": "guillaumecle.me@gmail.com",
         "url": "https://guillaumecle.me/"
     },
-    "contributors": [{
-        "name": "Patrique Legault",
-        "email": "patrique.legault@gmail.com",
-        "url": "https://www.pat-lego.io/"
-    }],
+    "contributors": [
+        {
+            "name": "Patrique Legault",
+            "email": "patrique.legault@gmail.com",
+            "url": "https://www.pat-lego.io/"
+        }
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/scope-r/scope-r.github.io/issues"

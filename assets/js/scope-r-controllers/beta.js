@@ -50,3 +50,9 @@ window.scoper.beta.formhandler = function (endpoint) {
     // Reset the Google captcha after submission
     grecaptcha.reset(); 
   }
+
+  window.scoper.beta.slideToBetaPanel = function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#beta").offset().top
+  }, 1000);
+  }

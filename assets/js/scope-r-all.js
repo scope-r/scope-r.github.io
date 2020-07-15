@@ -140,7 +140,7 @@ window.scoper.slack.contactUsPayload = {
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": ":loudspeaker: A new message was sent to you via the https://scope-r.app website.",
+				"text": ":loudspeaker: @channel A new message was sent to you via the https://scope-r.app website.",
 				"verbatim": false
 			}
 		},
@@ -193,7 +193,7 @@ window.scoper.slack.betaPayload = {
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": ":loudspeaker: A new message was sent to you via the https://scope-r.app website.",
+				"text": ":loudspeaker: @channel A new message was sent to you via the https://scope-r.app website.",
 				"verbatim": false
 			}
 		},

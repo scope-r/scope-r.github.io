@@ -126,15 +126,6 @@ window.scoper.contactus.resetFormFields = function() {
   // Reset the Google captcha after submission
   grecaptcha.reset(); 
 }
-<!-- Hotjar Tracking Code for https://scope-r.app/ -->
-(function(h,o,t,j,a,r){
-    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-    h._hjSettings={hjid:1914181,hjsv:6};
-    a=o.getElementsByTagName('head')[0];
-    r=o.createElement('script');r.async=1;
-    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-    a.appendChild(r);
-})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 window.scoper.slack.contactUsPayload = {
 	"text": "New Contact Request",
 	"blocks": [

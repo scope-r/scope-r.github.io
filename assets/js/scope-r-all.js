@@ -25,20 +25,14 @@ window.scoper.beta.formhandler = function (endpoint) {
     $("#beta_submit").click(function (event) {
       event.stopImmediatePropagation();
       event.preventDefault(); 
-
-      // Make sure that the captcha button was clicked
-      var response = grecaptcha.getResponse();
-      if (response != "") {
   
-        $.post({
-          url: endpoint,
-          data: window.scoper.slack.assembleBetaMessage(),
-          success: window.scoper.beta.formsuccess,
-          error: window.scoper.beta.formerror
-        });
-      } else {
-        alert('Please verify that you are not a robot.');
-      }
+      $.post({
+        url: endpoint,
+        data: window.scoper.slack.assembleBetaMessage(),
+        success: window.scoper.beta.formsuccess,
+        error: window.scoper.beta.formerror
+      });
+
     });
   };
 

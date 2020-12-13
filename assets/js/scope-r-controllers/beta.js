@@ -40,7 +40,4 @@ window.scoper.beta.formhandler = function (endpoint) {
     $("#email").val('');
     $("#career").val('');
     $("#info").val(''); 
-    
-    // Reset the Google captcha after submission
-    grecaptcha.reset(); 
   }
